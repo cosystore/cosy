@@ -64,7 +64,7 @@
 
  /*---------- login-register event ----------*/
     /*-- login-box --*/
-    $(document).on('click','.user-icon, .already-account, .openSignin, .confirm-btn, .login-checkout',function(){
+    $(document).on('click','.user-icon, .already-account, .openSignin, .login-checkout',function(){
         $('.form').addClass('home-user-form-active')
     });
 
