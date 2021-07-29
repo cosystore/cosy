@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>CosyStore</title>
+    <link rel="shortcut icon" type="image/png" href="image/logo/mini-logo.png" />
+
+    <!-------- Bootstrap-FonAwesome -------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+    <!---------- Font-Family ---------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+    <!---------- Css ---------->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+
+</head>
+
+<body>
+    <!---------- Preloader ---------->
+    <!-- <div id="home-preloader"></div> -->
+
+    <section class="home-main">
+        <!---------- Navigation ---------->
+        <nav class="nav-pc">
+            <!---------- Social-Mini-Icon ---------->
+            <div class="social">
+                <!---------- Time open ---------->
+                <div class="time-open">
+                    <span><i class="fa fa-clock-o">&#160;</i>Mon - Sat 8.00 - 18.00. Sunday CLOSED</span>
+                </div>
+                <!---------- Email ---------->
+                <div class="mail">
+                    <a href="mailto:support@cosy.com">Email: support@cosy.com</a>
+                </div>
+
+                <!---------- Phone-Number ---------->
+                <div class="phone">
+                    <a href="tel:+849666666666">Call: +84-96-6666-6666</a>
+                </div>
+                <!---------- Social-Link ---------->
+                <div class="social-medial">
+                    <a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+                    <a href="http://instagram.com"><i class="fa fa-instagram"></i></a>
+                    <a href="http://youtube.com"><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+
+            <!---------- Navbar ---------->
+            <div class="navbar"  id="myTopnav">
+                <!---------- Logo ---------->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./image/logo/Air-Cooled-Icon.png">
+                        <p>C<span>O</span>S<span>Y</span></p>
+                    </a>
+                </div>
+
+                <!---------- Menu for pc ---------->
+                <ul class="menu">                    
+                    <li><a href="index.html">Home</a></li>
+                   
+                    <li>
+                        <div class="dropdown">
+                            <!----------- Menubar-Icon ---------->
+                            <a class="dropbtn">Products <i class="fa fa-caret-down"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="products.html">All</a>
+                                <a href="panasonicpage.html">Panasonic</a>
+                                <a href="samsungpage.html">Samsung</a>
+                                <a href="daikinpage.html">Daikin</a>
+                                <a href="aquapage.html">AQUA</a>
+                                <a href="lgpage.html">LG</a>
+                            </div>
+                        </div>          
+                        <!---------- Sale ---------->
+                        <span class="sale">Sale</span>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropbtn">Support 
+                              <i class="fa fa-caret-down"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="warranty.html">Warranty</a>
+                                <a href="request.html">Service Request</a>
+                                <a href="faq.html">FAQ</a>
+                                <a href="experience.html">Experience</a>
+                            </div>
+                        </div>              
+                        <span class="sale">24/7</span>
+                    </li>
+                    <li><a href="showroom.html">Showroom</a></li> 
+                    <li><a href="contact.html">Contact Us</a></li> 
+                    <li><a href="about.html">Abouts Us</a></li>
+                </ul>
+
+                
+                <!---------- menu-toggle-icon ---------->
+                <label class="home-menu-toggle" for="nav-mobile-input"><i class="fa fa-bars"></i></label>
+                <input type="checkbox" class="nav-input" id="nav-mobile-input">
+
+                <!---------- Overlay-nav ---------->
+                <label for="nav-mobile-input" class="nav-overlay"></label>
+
+                <!---------- menu for mobile ---------->
+                <nav class="nav-mobile">
+                    <!---------- close menu ---------->
+                    <label for="nav-mobile-input" class="menu-mobile-close">
+                         <i class="fa fa-times"></i>
+                    </label>
+                   
+                    <ul class="menu-mobile-list">                    
+                        <li>
+                            <a class="menu-mobile-link" href="index.html">
+                                <i class="fa fa-home"></i><span>Home</span> 
+                            </a>
+                        </li>
+                       
+                        <li class="mobile-dropdown">       
+                            <a class="menu-mobile-link">
+                                <i class="fa fa-shopping-bag"></i><span>Products</span><i class="fa fa-caret-right"></i>
+                            </a>
+                            <ul class="mobile-dropdown-content">
+                                <li><a href="products.html">All</a></li>
+                                <li><a href="panasonicpage.html">Panasonic</a></li>
+                                <li><a href="samsungpage.html">Samsung</a></li>
+                                <li><a href="daikinpage.html">Daikin</a></li>
+                                <li><a href="aquapage.html">AQUA</a></li>
+                                <li><a href="lgpage.html">LG</a></li>
+                                
+                            </ul>                             
+                        </li>
+                        <li class="mobile-dropdown">
+                            <a class="menu-mobile-link">
+                                <i class="fa fa-phone"></i><span>Support</span>  
+                                <i class="fa fa-caret-right"></i>
+                            </a>
+                            <ul class="mobile-dropdown-content">
+                                <li><a href="warranty.html">Warranty</a></li>
+                                <li><a href="request.html">Service Request</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="experience.html">Experience</a></li>
+                            </ul>                                  
+                        </li>
+                        <li>
+                            <a class="menu-mobile-link" href="showroom.html">
+                                <i class="fa fa-location-arrow"></i><span>Showroom</span> 
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu-mobile-link" href="contact.html">
+                                <i class="fa fa-envelope"></i><span>Contact Us</span>
+                            </a>
+                        </li> 
+                        <li>
+                            <a class="menu-mobile-link" href="about.html">
+                                <i class="fa fa-users"></i><span>Abouts Us</span> 
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!---------- Right-Menu ---------->
+                <div class="right-menu">
+                    <!---------- Search-Icon ---------->
+                    <a class="home-search">
+                        <i class="fa fa-search"></i>
+                    </a>
+
+                    <!---------- Login-Icon ---------->
+                    <a class="user-icon">
+                        <i class="fa fa-user"></i>
+                    </a>
+
+                    <!---------- Cart-Icon ---------->
+                    <a href="cart.html">
+                        <i class="fa fa-shopping-cart">
+                            <!----------- Number of product in cart -->
+                            <span class="number-product">0</span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+
+        <!---------- Search ---------->
+        <div class="home-search-form">
+            <a class="home-search-cancel">
+                <i class="fa fa-window-close-o"></i>
+            </a>
+            <div class="home-search-bar">
+                <!---------- Search-Input ---------->
+                <div class="home-search-input">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <div class="search-tag">
+                    <input type="submit" value="Panasonic CS-PU9WKH-8M">
+                    <input type="submit" value="Daikin ATF25UV1V">
+                    <input type="submit" value="LG V10ENW">
+                    <input type="submit" value="AQUA AQA-KCRV10WNMA">
+                    <input type="submit" value="Samsung AR13TYHYCWKNSV">
+                    <input type="submit" value="Panasonic CS-YZ12WKH-8">
+                    <input type="submit" value="LG B10END">
+                    <input type="submit" value="AQUA AQA-KCHV12D">
+                    <input type="submit" value="Panasonic CS-PU12WKH-8M">
+                    <input type="submit" value="Panasonic CS-N9WKH-8M">
+                    <input type="submit" value="LG V10ENW1">
+                    <input type="submit" value="AQUA AQA-KCRV9WNM">
+                </div>
+            </div>
+        </div>
+
+
+        <!---------- Login-Register ---------->
+        <section class="form" id="formSign">
+            <div class="home-user-form">
+                <div class="user login-box">
+                    <div class="imgBx"><img src="./image/login/img1.jpg"></div>
+                    <div class="formBx">
+                        <!---------- cancel-btn ----------->
+                        <a class="form-cancel">
+                            <i class="fa fa-times"></i>
+                        </a>
+                        <form>
+                            <h2>Sign in</h2>
+                            <input type="text" placeholder="Username" required>
+                            <input type="password" placeholder="Password" required>
+                            <input type="submit" value="Login"><br>
+
+                            <a class="forget-btn">Forget Your Password?</a>
+
+                            <p class="signup">Don't have an account?&#160;<a href="#" onclick="toggleForm();"> Sign up</a></p>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="user reg-box">
+                    <div class="formBx">
+                        <form>
+                            <a class="form-cancel">
+                                <i class="fa fa-times"></i>
+                            </a>
+                            <h2>Create an account</h2>
+                            <input type="text" placeholder="Username" required>
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="password" placeholder="Create Password" required>
+                            <input type="password" placeholder="Confirm Password" required>
+                            <input type="submit" value="Sign Up">
+                            <p class="signup">Already have an account?&#160;<a href="#" onclick="toggleForm();"> Sign in</a></p>
+                        </form>
+                    </div>
+                    <div class="imgBx"><img src="./image/login/img2.jpg"></div>
+                </div>
+            </div>
+            <!---------- Forgot password ---------->
+            <div class="forgot-form">
+                <!--cancel-btn---------------->
+                <a class="form-cancel">
+                    <i class="fa fa-times"></i>
+                </a>
+                <h2>Forget password</h2>
+                <!--inputs-->
+                <form>
+                    <input type="email" placeholder="Email Adress" required>
+                    <input type="text" placeholder="Username" required>
+                    <input type="submit" value="Submit" class="submit-btn">
+                </form>
+                <!--forget-and-sign-up-btn-->
+                <div class="form-btns">
+                    <a class="already-account">
+                            ALREADY HAVE ACCOUNT?
+                    </a>
+                </div>
+            </div>
+
+            <!---------- Thank U! ---------->
+            <div class="confirm-form">
+                <!--cancel-btn---------------->
+                <a class="form-cancel">
+                    <i class="fa fa-times"></i>
+                </a>
+                <strong><i class="fa fa-check-circle-o"></i></strong>
+                <h2>Thank You!!!</h2>
+                <p>We will send you a confirmation email soon.</p>
+                <form>
+                    <input class="confirm-btn" type="submit" value="Go back">
+                </form>
+            </div>
+        </section>
+
+        <div class="full-slider-box slider-7 banner-box">
+            <!---------- Slick-Slider-Text ---------->
+            <div class="slider-text-box">
+                <div class="slider-text-6 banner-text">
+                </div>
+            </div>
+        </div>
+
+        <section class="warranty">
+            <div class="warranty-title">
+                <div class="title">COSY WARRANTY: TERMS &amp; CONDITIONS</div>
+                <div>
+                    <p>
+                        A Cosy warranty covers the repair of your Cosy air conditioner if it is found to be defective due to faulty materials or workmanship within the warranty period. Please refer to your owner's manual to verify the terms and conditions of your warranty.<br><br><br>
+                    </p>              
+                </div>
+            </div>
+            <div class="warranty-col">
+                <div class="warranty-container">
+                    <button class="active btn-active" data-list="warranty-1">HOME AIR CONDITIONERS: WARRANTY TERMS</button>
+                    <button  data-list="warranty-2">LIFETIME FREE SERVICE TERMS &amp; CONDITIONS</button>
+                    <div class="warranty-box warranty-1">
+                        <p>The Cosy split inverter, split non-inverter & window air conditioners upto 2.0 Ton capacity comes with 12 months (1 year) comprehensive warranty from the date of purchase on all parts except front panel and plastic parts and, thereafter 48 months (4 years) additional warranty on the compressor subject to company policies. The warranty provided is valid only if the Warranty Certificate Card bears the rubber stamp, date and signature of Cosy’s Authorized Channel Partner / Service Provider. M/s Cosy Appliances Pvt. Ltd. (The Company) warrants to the Original Purchaser that for a period of 12 months from the date of purchase, the company will repair or replace free of charge any part or parts of the Air Conditioner (except plastic parts), which proves upon inspection by the Company or any of its Authorized Sales and Service Representatives to have been defective due to faulty material or poor workmanship. Warranty involves repairing of defective product/ parts and does not entitle purchaser for the replacement of complete product.</p>
+                        <ul>
+                            <li> This warranty shall be valid only for the said period of 12 months as specified above, irrespective of whether the said unit has been in use or not for any reason whatsoever, or the unit is moved from one location to another. Warranty does not cover accessories external to the equipment.</li></i>
+                            <li></i> This warranty is confined to the first purchaser of the product only.</li>
+                            <li></i> Repair or replacement will be carried out through the Company’s Service Centres or its Authorized Service Providers only.</li>
+                            <li></i> This warranty shall stand automatically terminated in the event of the said unit being serviced, repaired, installed, de-installed, re-installed or otherwise attended to by any person or organization or agency or by the said purchaser himself other than the authorized representative of the company or its authorised service providers.</li>
+                            <li></i> Warranty does not cover parts / coils damaged due to polluted/ corrosive atmosphere. Warranty does not cover plastic parts of the Air Conditioner.</li>
+                            <li></i> The warranty for machine will expire automatically upon completion of 12 months from date of purchase on invoice irrespective of whether the AC has been in use or not, for any reason whatsoever, including any technical breakdowns, time taken for repairs, replacement and transit, power cuts, restrictions or the unit is moved from one location to another, etc.</li>
+                            <li></i> Damage to the product or any part/s due to transportation or shifting or mishandling is not covered under Warranty</li>
+                            <li></i> The AC is designed to operate at a range of (230V +/- 10%). Any failure due to operation of the machine beyond these limits will not be covered by the above warranty. The Customer shall ensure that a voltage stabilizer is installed in those areas where voltage is not available within the warranty range (230V +/- 10%). The stabilizer should be of any reputed manufacturer. However, voltage stabilizing equipment is not covered under this Warranty.</li>
+                            <li></i> The Purchaser should preserve the original invoice and Warranty Certificate Card for necessary verification and should produce it at the time of service.</li>
+                            <li></i> Onsite warranty is not available for any Portable Air Conditioner. Portable AC's service and complaint will be attended at our Authorized Service Centres only.</li>
+                            <li></i> Any loss of refrigerant caused due to sabotage, improper handling or treatment, carelessness, accident, fire, flood earthquake or any natural calamity any corrosive action on the original refrigerant pipes, fittings, valves etc for whatever reasons, shall not be covered under this warranty.</li>
+                            <li></i> None of the employees and /or Authorized Dealers of the Company have any authority whatsoever to vary the terms and conditions of this warranty.</li>
+                            <li></i> This warranty shall be deemed to have been issued at Mumbai, state of Maharashtra and courts at Mumbai shall have exclusive jurisdiction on matters covered by or following from this warranty, and the original purchaser alone shall have cause of action arising out of the transaction</li>
+                            <li></i> The product is not registered with the company or not purchased from an Authorized Cosy Channel Partner and improper installation by unauthorized personnel is carried out.</li>
+                            <li></i> Any modifications or alterations are made in the wiring or connections of the unit.</li>
+                            <li></i> At any time, during the warranty period if any part of the unit is tampered with, altered, repaired or serviced by any unauthorized person, not being the authorized representative of the company or its authorized dealers</li>
+                            <li></i> Defects caused by improper use as determined by the company personnel.</li>
+                            <li></i> If any component fails due to abnormal power supply.</li>
+                            <li></i> Any damage caused due to fire, flood, accident, corrosion, rodents, abuse or misuse.</li>
+                            <li></i> Defects arising due to environment such as polluted or corrosive atmosphere.</li>
+                            <li></i> The serial number of the unit or any part thereof is damaged, defaced, altered, obliterated , or tampered with or removal for any reason whatsoever.</li>
+                            <li></i> The unit is moved from its original place of installation or re-installation.</li>
+                            <li></i> The warranty on Portable Air Conditioner does not apply to any damage resulting from abusive, unreasonable use or damage. Commercial application or usage of the Portable AC is not covered under this warranty.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="warranty-box warranty-2">
+                    <ul>
+                        <li></i> Lifetime warranty on inverter compressor is applicable on purchase of Cosy VarioQool Inverter Ac's only for individual/retail customers. Lifetime for a residential air conditioner is defined as 10 years based on the E-Waste management rules 2016 guidelines (which defines the lifetime of the inverter compressor in the offer).</li>
+                        <li></i> Free service & extended warranty policy is applicable for Cosy Inverter Split air conditioners of 1.0 & 1.5 Ton capacity invoiced to end-customer, sold via authorised channel partners only.</li>
+                        <li></i> Over and above the 1 Year comprehensive warranty, the additional 9 Year warranty is only on Inverter compressor and does not include any other part, gas charging & labour costs.</li>
+                        <li></i> 2 Free preventive maintenance service calls will be provided within the one year standard warranty period, and 8 free periodic preventive maintenance services will be provided on an interval of 6 months/year for additional 4 years.</li>
+                        <li></i> To claim this additional warranty and service offer, customer is required to register the product and personal details with Cosy within 7 days of purchase.</li>
+                        <li></i> The following details would be required for complete product registration: [Customer Details] Customer full name, address, mobile number, e-mail ID; [Channel partner details] Dealer name, invoice number, invoice date; [Product details] Model name & serial number of indoor unit, outdoor unit and compressor.</li>
+                        <li></i> The air conditioner unit is required to be installed by a Cosy Authorized Service Partner only, to avail this offer.</li>
+                        <li></i> To get the free services, customer needs to book all service calls with Cosy Customer Care on toll-free number 1800-123-8800 or register a service request on the company’s website www.Cosyac.com. In any other case, the offer will be deemed invalid.</li>
+                        <li></i> All periodic preventive maintenance services for the 5 year period is to be done by an authorized service partner of Cosy.</li>
+                        <li></i> The Customer is required to produce the original invoice copy and extended warranty booklet [duly filled by the authorised seller] at the time of periodic services, during the 5 year offer period.</li>
+                        <li></i> Any product breakdown repairs or replacement of parts (including all functional parts, plastic & sheet metal parts, gas charging & labour), will be done on chargeable basis after a period of one year comprehensive standard warranty period.</li>
+                        <li></i> For attending any service call under this offer beyond the municipal limits of the jurisdiction/locality in which the Authorised Service Provider of Cosy is situated (outstation locations), all expenses incurred in dispatching the unit, or parts thereof, in connection with deputing of service personnel/ technicians, to and fro conveyance and other incidentals as prevailing from time to time will be borne by the customer.</li>
+                        <li></i> This offer will be null and void if the product is opened/rep aired/- modified by any unauthorized service person/center and such a unit shall be declared as tampered. No further warranty or free services shall be applicable on such unit.</li>
+                        <li></i> This service offer will automatically expire once the free services are availed or the 5 year period is completed (whichever condition is satisfied first).
+                        </li>
+                        <li></i> In the event of any re-installation/ or change in the location of the unit during the offer period, this offer shall become null and void.</li>
+                        <li></i> The company shall not be deemed to be in default for any delay in servicing/ regulation of government, public movement, war performance or any unavoidable situation or force majeure etc.</li>
+                        <li></i> Offer is not applicable on cassette, floor standing, ducted or Grande split air conditioners.</li>
+                        <li></i> Any institutional sale is not covered in this offer.</li>
+                        <li></i> The company reserves the right to withdraw this offer at its sole discretion at any point of time.</li>
+                        <li></i> All other terms & conditions shall remain the same as per original warranty card of the product except of those covered above.</li>
+                        <li></i> All differences or disputes arising out of this offer are subject to exclusive jurisdiction of courts at Mumbai, India.</li>
+                        <li></i> Worth Value of this offer is the perceived value for the customer, as per the average price of services.</li>
+                    </ul>
+                </div>  
+        
+            </div>
+        </section>
+
+        <!-------------- promise ----------------->
+        <section class="home-service">
+            <h3 class="title">QUALITY PROMISE</h3>
+            <div class="promise-container">
+                <div class="promise-section">
+                    <div class="promise-box">
+                        <div class="promise-img"><img src="./image/Faq-icon/Cruise-Promise-Icons-01.png" width="60%"></div>
+                        <div class="promise-text">
+                            <h4>INNOVATION FIRST</h4>
+                            <p>A pioneer in air care technology for over 27 years.</p>
+                        </div>
+                    </div>
+                    <div class="promise-box">
+                        <div class="promise-img"><img src="./image/Faq-icon/Cruise-Promise-Icons-03.png" width="60%"></div>
+                        <div class="promise-text">
+                            <h4>BUILT HEAVY DUTY</h4>
+                            <p>Durable and robust build to weather extreme coastal climate conditions.</p>
+                        </div>
+                    </div>
+                    <div class="promise-box">
+                        <div class="promise-img"><img src="./image/Faq-icon/Cruise-Promise-Icons-02.png" width="60%"></div>
+                        <div class="promise-text">
+                            <h4>LIFETIME WARRANTY</h4>
+                            <p>A revolutionary 10 year warranty on inverter compresors.</p>
+                        </div>
+                    </div>
+                    <div class="promise-box">
+                        <div class="promise-img"><img src="./image/Faq-icon/Cruise-Promise-Icons-05.png" width="60%"></div>
+                        <div class="promise-text">
+                            <h4>LONG LIFESPAN</h4>
+                            <p>100% copper technology for 3x longer durability and low cost maintenance.</p>
+                        </div>
+                    </div>
+                    <div class="promise-box">
+                        <div class="promise-img"><img src="./image/Faq-icon/Cruise-Promise-Icons-04.png" width="60%"></div>
+                        <div class="promise-text">
+                            <h4>GLOBALLY CERTIFIED</h4>
+                            <p>ISO quality operations OEM’s for global HVAC Co’s.</p>
+                        </div>
+                    </div>
+                    <div class="promise-box">
+                        <div class="promise-img"><img src="./image/Faq-icon/Cruise-Promise-Icons-06.png" width="60%"></div>
+                        <div class="promise-text">
+                            <h4>EASY TO MAINTAIN</h4>
+                            <p>Professional support with a nationwide network.<br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------- footer ----------------->
+        <footer class="footer">
+            <div class="home-container">
+                <div class="footer-row">
+                    <div class="footer-col-1">
+                        <ul>
+                            <li>
+                                <h3>Cosy company</h3>
+                                <p>We always provide you with the best quality products at a reasonable price. Besides. we have a professional support team. Always consult and make customers satisfied</p>
+                            </li>
+                            <li>
+                                <a href="contact.html"><i class="fa fa-map-marker">&#160;&#160;</i>8A Ton That Thuyet, My Dinh, Ha Noi</a>
+                            </li>
+                            <li>
+                                <a href="tel:+849666666666"><i class="fa fa-phone">&#160;&#160;</i>+84-96-6666-6666</a>
+                            </li>
+                            <li>
+                                <a href="mailto:support@cosy.com"><i class="fa fa-envelope">&#160;&#160;</i>support@cosy.com</a>
+                            </li>
+                            <div class="social-links">
+                                <a href="http://facebook.com"><i class="fa fa-facebook-f"></i></a>
+                                <a href="http://twitter.com"><i class="fa fa-twitter"></i></a>
+                                <a href="http://instagram.com"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="footer-col ">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="warranty.html">Warranty</a></li>
+                            <li><a href="request.html">Service Request</a></li>
+                        </ul>
+                    </div> 
+
+                    <div class="footer-col ">
+                        <h4>Showroom TP.HCM </h4>
+                        <div>
+                            <ul>
+                                <li>    
+                                    <div class="footer-showroom">
+                                        <h1>Showroom 1</h1>
+                                        <p>Adress : <span>886, Dong Da,TP.HCM</span></p>
+                                        <p>Support : <a href="tel:0812 992 334">0812 992 334</a></p>
+                                        <p>Email : <a href="mailto:cosy886@gmail.com">Cosy_886@gmail.com</a></p>
+                                    </div>
+                                </li>
+    
+                                <li>
+                                    <div class="footer-showroom">
+                                        <h1>Showroom 2</h1>
+                                        <p>Adress : <span>216, Thai Ha, TP.HCM</span></p>
+                                        <p>Support : <a  href="tel:0930 858 124">0930 858 124</a></p>
+                                        <p>Email : <a href="mailto:Cosy_216@gmail.com">Cosy_216@gmail.com</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>   
+                    </div>
+                    <div class="footer-col">
+                        <h4>Showroom Ha Noi </h4>
+                        <div>
+                            <ul>    
+                                <li>
+                                    <div class="footer-showroom">
+                                        <h1>Showroom 1</h1>
+                                        <p>Adress : <span>79B, Hai Ba Trung, Ha Noi</span></p>
+                                        <p>Support : <a href="tel:0693 993 323">0693 993 323</a></p>
+                                        <p>Email : <a href="mailto:Cosy_79B@gmail.com">Cosy_79B@gmail.com</a></p>
+                                    </div>   
+                                </li> 
+    
+                                <li>
+                                    <div class="footer-showroom ">
+                                        <h1>Showroom 2</h1>
+                                        <p>Adress : <span>8, Ba Dinh, Ha Noi</span></p>
+                                        <p>Support : <a  href="tel:0685 221 999">0685 221 999</a></p>
+                                        <p>Email : <a href="mailto:Cosy_8BaDinh@gmail.com">Cosy_8Ba@gmail.com</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>   
+                    </div>
+                   
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>Coyright &#169; 2021 CosyCompany. All Right Reserved</p>
+                <a href="warranty.html">Terms of Use</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+        </footer>
+
+        <!------------- chat-popup ----------------->
+        <div>
+            <input type="checkbox" id="click">
+            <label class="chat-click" for="click">
+                <i class="fa fa-times"></i>
+                <i class="fa fa-comments-o"></i>
+            </label>
+            <div class="popup-chat">
+                <div class="head-text">
+                    <i class="fa fa-user"></i> Servicer Online <span><i class="fa fa-circle"></i></span>
+                </div>
+                <div class="chat-box">
+                    <div class="desc-text">
+                        Please fill out the form below to start chatting with the next available agent.
+                    </div>
+                    <form action="#">
+                        <div class="field">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="field">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Messenger" required></textarea>
+                        </div>
+                        <div class="field">
+                            <button type="submit">Start chat</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!------------- click-scroll-top ----------------->
+        <div onclick="scrollToTop();" class="scrollTop"><i class="fa fa-chevron-up"></i></div>
+    </section>
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/loading.js"></script>
+
+    <!---------- Login - register ---------->
+    <script type="text/javascript">
+        function toggleForm() {
+            secttion = document.querySelector('.form');
+            container = document.querySelector('.home-user-form');
+            container.classList.toggle('active-user');
+            secttion.classList.toggle('active-user');
+        }
+    </script>
+
+    <!---------- click-drop-menu-bar ---------->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.menu-mobile-list li').click(function() {
+                $(this).siblings().removeClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.warranty-container .warranty-box').hide();
+            $('.warranty-container .warranty-box:last-child').show();
+            $('.warranty-container button').click(function(){
+                $('.warranty-container button').removeClass('active')
+                $(this).addClass('active')
+
+                var warranTy = $(this).attr('data-list');
+                $('.warranty-box').hide();
+                $('.'+warranTy).show();
+            });
+        });
+    </script>
+</body>
+
+</html>
