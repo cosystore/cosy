@@ -81,7 +81,7 @@
         $('.form').addClass('confirm-active').removeClass('forgot-active')
     });     
     /*-- cancel-login --*/
-    $(document).on('click','.form-cancel',function(){
+    $(document).on('click','.form-cancel, .confirm-btn',function(){
         $('.form').removeClass('home-user-form-active').removeClass('confirm-active').removeClass('forgot-active')
     });
 
