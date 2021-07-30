@@ -104,7 +104,7 @@
                                 <a href="warranty.html">Warranty</a>
                                 <a href="request.html">Service Request</a>
                                 <a href="faq.html">FAQ</a>
-                                <a href="experience.html">Experience</a>
+                                <a href="experience.html">Guide</a>
                             </div>
                         </div>              
                         <span class="sale">24/7</span>
@@ -158,7 +158,7 @@
                                 <li><a href="warranty.html">Warranty</a></li>
                                 <li><a href="request.html">Service Request</a></li>
                                 <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="experience.html">Experience</a></li>
+                                <li><a href="experience.html">Guide</a></li>
                             </ul>                                  
                         </li>
                         <li>
@@ -1619,7 +1619,7 @@
             </section>
         </div>
         <div class="exp-section">
-            <div class="title" style="color: #000;">Experience</div>
+            <div class="title" style="color: #000;">Guides</div>
             <div class="exp-container">
                 <div class="exp-box-left">
                     <div class="exp-left-img">
@@ -1719,37 +1719,37 @@
             <div class="title">Our partners</div>
             <div class="home-featured-slider-items">
                 
-                <ul id="autoWidth" class="cs-hidden">
+                <ul id="responsive" >
                     <!---------- product-1 ---------->
                     <li class="item-product">
                         <div class="home-featured-img">
-                            <a href="daikinpage.html"><img src="./image/logo/daikin-logo.png" width="50%"></a>
+                            <a href="daikinpage.html"><img src="./image/logo/daikin-logo-mini.png" ></a>
                         </div>    
                     </li>
                     <!---------- product-2 ---------->
                     <li class="item-product">
                         <div class="home-featured-img">
-                            <a href="aquapage.html"><img src="./image/logo/aquavn.png"  width="50%"></a>
+                            <a href="aquapage.html"><img src="./image/logo/aqua-logo-mini.png"  ></a>
                         </div>
                     </li>
                     <!---------- product-3 ---------->     
                     <li class="item-product">
                         <div class="home-featured-img">
-                            <a href="samsungpage.html"><img src="./image/logo/samsung_logo.png"  width="50%"></a>
+                            <a href="samsungpage.html"><img src="./image/logo/samsung-logo-mini.png"  ></a>
                         </div>
                        
                     </li>
                     <!---------- product-4 ---------->
                     <li class="item-product">
                         <div class="home-featured-img">
-                            <a href="lgpage.html"><img src="./image/logo/LG_logo.png" width="50%"></a>
+                            <a href="lgpage.html"><img src="./image/logo/lg-logo-mini.png"></a>
                         </div>
                         
                     </li>
                     <!---------- product-5 ---------->
                     <li class="item-product">
                         <div class="home-featured-img">
-                            <a href="panasonicpage.html"><img src="./image/logo/panasonic-logo.png"  width="90%"></a>
+                            <a href="panasonicpage.html"><img src="./image/logo/panasonic-logo-mini.png"  ></a>
                         </div>
                        
                     </li>
@@ -2085,6 +2085,51 @@
                 $('.'+read).show();
             });
         });
+    </script>
+    <script type="text/javascript">
+        /** ---------- Slick-slider-brands ---------- */
+            $(document).ready(function() {
+                $('#responsive').lightSlider({
+                    item: 5,  
+                    auto:true,                              
+                    speed: 1000,                            
+                    slideMove:1,    
+                    easing: 'cubic-bezier(0.25, 0, 0.25, 1)', 
+                    loop: true,      
+                    responsive : [
+                        {
+                            breakpoint:1300,
+                            settings: {
+                                item:4,
+                                slideMove:1,
+                               
+                            }
+                        },
+                        {
+                            breakpoint:1080,
+                            settings: {
+                                item:3,
+                                slideMove:1,
+                            }
+                        },
+                        {
+                            breakpoint:800,
+                            settings: {
+                                item:2,
+                                slideMove:1,
+                            }
+                        },
+                        {
+                            breakpoint:540,
+                            settings: {
+                                item:1,
+                                slideMove:1
+                            }
+                        }
+                    ],
+                });  
+            });
+
     </script>
 </body>
 

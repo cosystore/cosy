@@ -14,53 +14,11 @@
             slideMargin:0,
             loop:true,
             auto:true,
-            pause: 3500,
-            speed: 1500,
+            pause: 5000,
+            speed: 2000,
         });
     }); 
 
-/** ---------- Slick-slider-brands ---------- */
-    $(document).ready(function() {
-        $('#autoWidth').lightSlider({
-            item: 5,
-            loop:true,
-            auto:true,
-            speed: 1000,
-            responsive : [
-                {
-                    breakpoint:1300,
-                    settings: {
-                        item:4,
-                        slideMove:1,
-                      }
-                },
-                {
-                    breakpoint:1080,
-                    settings: {
-                        item:3,
-                        slideMove:1,
-                      }
-                },
-                {
-                    breakpoint:800,
-                    settings: {
-                        item:2,
-                        slideMove:1,
-                      }
-                },
-                {
-                    breakpoint:540,
-                    settings: {
-                        item:1,
-                        slideMove:1
-                      }
-                }
-            ],
-            onSliderLoad: function() {
-                $('#autoWidth').removeClass('cS-hidden');
-            } 
-        });  
-      });
 
  /*---------- login-register event ----------*/
     /*-- login-box --*/

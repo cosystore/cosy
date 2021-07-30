@@ -1076,17 +1076,19 @@ section .home-user-form.active-user .login-box .imgBx
     position: relative;
     cursor: pointer;
     margin: 0 10px;
+    width: 100%;
+}
+.home-featured-img img{
+    width: 50%;
 }
 .home-featured-slider-items{
-    width: 100%;
-    
+    width: 80%;
     background: linear-gradient(to bottom, #fff, rgb(231, 228, 228), #fff);
 }
 #autoWidth{
     display: flex;
     justify-content: center;
     margin: auto;
-    position: relative;
 }
 .item-product{
     text-align: center;
@@ -1096,7 +1098,9 @@ section .home-user-form.active-user .login-box .imgBx
     align-items: center;
     border: 1px solid #ccc;
     background: #fff;
-    border-radius: 15px;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
 }
 
 
@@ -3902,8 +3906,8 @@ form .request-btn .btn:active{
     color: #868686;
 }
 .request-active,
-.request-active .request-confirm-form{
-    display: flex;
+.request-active .request-contact .request-confirm-form{
+    display: block;
     animation: fade 0.3s; 
 }
 
