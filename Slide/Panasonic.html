@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>CosyStore</title>
+    <link rel="shortcut icon" type="image/png" href="image/logo/mini-logo.png" />
+
+    <!-------- Bootstrap-FonAwesome -------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!---------- Css-slick ---------->
+    <link rel="stylesheet" type="text/css" href="css/lightslider.css">
+
+    <!---------- Font-Family ---------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+    <!---------- Css ---------->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/singleproduct.css"> 
+    <link rel="stylesheet" type="text/css" href="css/jquery.nice-number.css"> 
+    
+
+</head>
+
+<body>
+    <!---------- Preloader ---------->
+    <div id="home-preloader"></div>
+
+    <section class="home-main">
+        <!---------- Navigation ---------->
+        <nav class="nav-pc">
+            <!---------- Social-Mini-Icon ---------->
+            <div class="social">
+                <!---------- Time open ---------->
+                <div class="time-open">
+                    <span><i class="fa fa-clock-o">&#160;</i>Mon - Sat 8.00 - 18.00. Sunday CLOSED</span>
+                </div>
+                <!---------- Email ---------->
+                <div class="mail">
+                    <a href="mailto:support@cosy.com">Email: support@cosy.com</a>
+                </div>
+
+                <!---------- Phone-Number ---------->
+                <div class="phone">
+                    <a href="tel:+849666666666">Call: +84-96-6666-6666</a>
+                </div>
+                <!---------- Social-Link ---------->
+                <div class="social-medial">
+                    <a href="http://facebook.com"><i class="fa fa-facebook"></i></a>
+                    <a href="http://instagram.com"><i class="fa fa-instagram"></i></a>
+                    <a href="http://youtube.com"><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+
+            <!---------- Navbar ---------->
+            <div class="navbar"  id="myTopnav">
+                <!---------- Logo ---------->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./image/logo/Air-Cooled-Icon.png">
+                        <p>C<span>O</span>S<span>Y</span></p>
+                    </a>
+                </div>
+
+                <!---------- Menu for pc ---------->
+                <ul class="menu">                    
+                    <li><a href="index.html">Home</a></li>
+                   
+                    <li>
+                        <div class="dropdown">
+                            <!----------- Menubar-Icon ---------->
+                            <a class="dropbtn">Products <i class="fa fa-caret-down"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="products.html">All</a>
+                                <a href="panasonicpage.html">Panasonic</a>
+                                <a href="samsungpage.html">Samsung</a>
+                                <a href="daikinpage.html">Daikin</a>
+                                <a href="aquapage.html">AQUA</a>
+                                <a href="lgpage.html">LG</a>
+                            </div>
+                        </div>          
+                        <!---------- Sale ---------->
+                        <span class="sale">Sale</span>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a class="dropbtn">Support 
+                              <i class="fa fa-caret-down"></i>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="warranty.html">Warranty</a>
+                                <a href="request.html">Service Request</a>
+                                <a href="faq.html">FAQ</a>
+                                <a href="experience.html">Experience</a>
+                            </div>
+                        </div>              
+                        <span class="sale">24/7</span>
+                    </li>
+                    <li><a href="showroom.html">Showroom</a></li> 
+                    <li><a href="contact.html">Contact Us</a></li> 
+                    <li><a href="about.html">Abouts Us</a></li>
+                </ul>
+
+                
+                <!---------- menu-toggle-icon ---------->
+                <label class="home-menu-toggle" for="nav-mobile-input"><i class="fa fa-bars"></i></label>
+                <input type="checkbox" class="nav-input" id="nav-mobile-input">
+
+                <!---------- Overlay-nav ---------->
+                <label for="nav-mobile-input" class="nav-overlay"></label>
+
+                <!---------- menu for mobile ---------->
+                <nav class="nav-mobile">
+                    <!---------- close menu ---------->
+                    <label for="nav-mobile-input" class="menu-mobile-close">
+                         <i class="fa fa-times"></i>
+                    </label>
+                   
+                    <ul class="menu-mobile-list">                    
+                        <li>
+                            <a class="menu-mobile-link" href="index.html">
+                                <i class="fa fa-home"></i><span>Home</span> 
+                            </a>
+                        </li>
+                       
+                        <li class="mobile-dropdown">       
+                            <a class="menu-mobile-link">
+                                <i class="fa fa-shopping-bag"></i><span>Products</span><i class="fa fa-caret-right"></i>
+                            </a>
+                            <ul class="mobile-dropdown-content">
+                                <li><a href="products.html">All</a></li>
+                                <li><a href="panasonicpage.html">Panasonic</a></li>
+                                <li><a href="samsungpage.html">Samsung</a></li>
+                                <li><a href="daikinpage.html">Daikin</a></li>
+                                <li><a href="aquapage.html">AQUA</a></li>
+                                <li><a href="lgpage.html">LG</a></li>
+                            </ul>                             
+                        </li>
+                        <li class="mobile-dropdown">
+                            <a class="menu-mobile-link">
+                                <i class="fa fa-phone"></i><span>Support</span>  
+                                <i class="fa fa-caret-right"></i>
+                            </a>
+                            <ul class="mobile-dropdown-content">
+                                <li><a href="warranty.html">Warranty</a></li>
+                                <li><a href="request.html">Service Request</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="experience.html">Experience</a></li>
+                            </ul>                                  
+                        </li>
+                        <li>
+                            <a class="menu-mobile-link" href="showroom.html">
+                                <i class="fa fa-location-arrow"></i><span>Showroom</span> 
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu-mobile-link" href="contact.html">
+                                <i class="fa fa-envelope"></i><span>Contact Us</span>
+                            </a>
+                        </li> 
+                        <li>
+                            <a class="menu-mobile-link" href="about.html">
+                                <i class="fa fa-users"></i><span>Abouts Us</span> 
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!---------- Right-Menu ---------->
+                <div class="right-menu">
+                    <!---------- Search-Icon ---------->
+                    <a class="home-search">
+                        <i class="fa fa-search"></i>
+                    </a>
+
+                    <!---------- Login-Icon ---------->
+                    <a class="user-icon">
+                        <i class="fa fa-user"></i>
+                    </a>
+
+                    <!---------- Cart-Icon ---------->
+                    <a href="cart.html">
+                        <i class="fa fa-shopping-cart">
+                            <!----------- Number of product in cart -->
+                            <span class="number-product">0</span>
+                        </i>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+
+        <!---------- Search ---------->
+        <div class="home-search-form">
+            <a class="home-search-cancel">
+                <i class="fa fa-window-close-o"></i>
+            </a>
+            <div class="home-search-bar">
+                <!---------- Search-Input ---------->
+                <div class="home-search-input">
+                    <input type="search" placeholder="Search...">
+                </div>
+                <div class="search-tag">
+                    <input type="submit" value="Panasonic CS-PU9WKH-8M">
+                    <input type="submit" value="Daikin ATF25UV1V">
+                    <input type="submit" value="LG V10ENW">
+                    <input type="submit" value="AQUA AQA-KCRV10WNMA">
+                    <input type="submit" value="Samsung AR13TYHYCWKNSV">
+                    <input type="submit" value="Panasonic CS-YZ12WKH-8">
+                    <input type="submit" value="LG B10END">
+                    <input type="submit" value="AQUA AQA-KCHV12D">
+                    <input type="submit" value="Panasonic CS-PU12WKH-8M">
+                    <input type="submit" value="Panasonic CS-N9WKH-8M">
+                    <input type="submit" value="LG V10ENW1">
+                    <input type="submit" value="AQUA AQA-KCRV9WNM">
+                </div>
+            </div>
+        </div>
+
+
+        <!---------- Login-Register ---------->
+        <section class="form" id="formSign">
+            <div class="home-user-form">
+                <div class="user login-box">
+                    <div class="imgBx"><img src="./image/login/img1.jpg"></div>
+                    <div class="formBx">
+                        <!---------- cancel-btn ----------->
+                        <a class="form-cancel">
+                            <i class="fa fa-times"></i>
+                        </a>
+                        <form>
+                            <h2>Sign in</h2>
+                            <input type="text" placeholder="Username" required>
+                            <input type="password" placeholder="Password" required>
+                            <input type="submit" value="Login"><br>
+
+                            <a class="forget-btn">Forget Your Password?</a>
+
+                            <p class="signup">Don't have an account?&#160;<a href="#" onclick="toggleForm();"> Sign up</a></p>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="user reg-box">
+                    <div class="formBx">
+                        <form>
+                            <a class="form-cancel">
+                                <i class="fa fa-times"></i>
+                            </a>
+                            <h2>Create an account</h2>
+                            <input type="text" placeholder="Username" required>
+                            <input type="email" placeholder="Email Address" required>
+                            <input type="password" placeholder="Create Password" required>
+                            <input type="password" placeholder="Confirm Password" required>
+                            <input type="submit" value="Sign Up">
+                            <p class="signup">Already have an account?&#160;<a href="#" onclick="toggleForm();"> Sign in</a></p>
+                        </form>
+                    </div>
+                    <div class="imgBx"><img src="./image/login/img2.jpg"></div>
+                </div>
+            </div>
+            <!---------- Forgot password ---------->
+            <div class="forgot-form">
+                <!--cancel-btn---------------->
+                <a class="form-cancel">
+                    <i class="fa fa-times"></i>
+                </a>
+                <h2>Forget password</h2>
+                <!--inputs-->
+                <form>
+                    <input type="email" placeholder="Email Adress" required>
+                    <input type="text" placeholder="Username" required>
+                    <input type="submit" value="Submit" class="submit-btn">
+                </form>
+                <!--forget-and-sign-up-btn-->
+                <div class="form-btns">
+                    <a class="already-account">
+                            ALREADY HAVE ACCOUNT?
+                    </a>
+                </div>
+            </div>
+
+            <!---------- Thank U! ---------->
+            <div class="confirm-form">
+                <!--cancel-btn---------------->
+                <a class="form-cancel">
+                    <i class="fa fa-times"></i>
+                </a>
+                <strong><i class="fa fa-check-circle-o"></i></strong>
+                <h2>Thank You!!!</h2>
+                <p>We will send you a confirmation email soon.</p>
+                <form>
+                    <input class="confirm-btn" type="submit" value="Go back">
+                </form>
+            </div>
+        </section>
+
+        <!-------- single product details ---------->
+        <div class="single-product" id="btnGotop">
+            <div class="link-products">
+                <h2>Product Details</h2>
+                <a href="index.html">Home</a><a href="products.html">Products</a>  <a href="panasonicpage.html">Panasonic</a><a style="color: #0075bc;" href="Panasonic.html">PANASONIC INVERTER 9000BTU CS-PU12WKH-8M</a>
+            </div>
+            <div class="single-top">
+                <div class="single-product-img">
+                    <ul id="lightSlider">
+                        <li data-thumb="./imgcosy/panasonic/panasonic-details/thumb/turnon.jpg">
+                            <img src="./imgcosy/panasonic/panasonic-details/turnon.jpg" />
+                        </li>
+                        <li data-thumb="./imgcosy/panasonic/panasonic-details/thumb/panasonic-left.jpg">
+                            <img src="./imgcosy/panasonic/panasonic-details/panasonic-left.jpg" />
+                        </li>
+                        <li data-thumb="./imgcosy/panasonic/panasonic-details/thumb/panasonic-right.jpg">
+                            <img src="./imgcosy/panasonic/panasonic-details/panasonic-right.jpg" />
+                        </li>
+                        <li data-thumb="./imgcosy/panasonic/panasonic-details/thumb/panasomic-open.jpg">
+                            <img src="./imgcosy/panasonic/panasonic-details/panasomic-open.jpg" />
+                        </li>
+                        <li data-thumb="./imgcosy/panasonic/panasonic-details/thumb/panasonic-combo.jpg">
+                            <img src="./imgcosy/panasonic/panasonic-details/panasonic-combo.jpg" />
+                        </li>
+                        <li data-thumb="./imgcosy/panasonic/panasonic-details/thumb/panasonic-info.jpg">
+                            <img src="./imgcosy/panasonic/panasonic-details/panasonic-info.jpg" />
+                        </li>
+                        <li data-thumb="./imgcosy/panasonic/panasonic-details/thumb/panasonic-mid.jpg">
+                            <img src="./imgcosy/panasonic/panasonic-details/panasonic-mid.jpg" />
+                        </li>
+                        <li data-thumb="./imgcosy/panasonic/panasonic-details/thumb/remote.jpg">
+                            <img src="./imgcosy/panasonic/panasonic-details/remote.jpg" />
+                        </li>                 
+                    </ul>
+                </div>
+                <div class="single-product-info">
+                    <p>Code: V13APFUV</p>
+                    <strong>Panasonic 9000BTU 9WKH-9M</strong>
+                    <div class="review-customer">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <span style="color: #333;" >5.0 (172) | <a href="#section1">Review</a></span>
+                    </div>
+                    <ul class="abc">
+                        <li>Remove ultra-fine dust PM0.1</li>
+                        <li>UVnano™ sterilization technology</li>
+                        <li>Energy saving</li>
+                        <li>Inverter Compressor™</li>
+                        <li>Wattage: 9000 BTU</li>
+                        <li>Control Method:	Remote</li>
+                    </ul>
+                    <div class="single-price">
+                        <p><strike>$599.00</strike></p>
+                        <p>$479.00 <span>+ 20% SALE</span></p>
+                    </div>
+                    <div class="details-btn">
+                        <button class="active-details" data-list="tab-1">Info</button>
+                        <button data-list="tab-2">Details</button>
+                    </div>
+                    <div class="details-container">
+                        <div class="details-product tab-1">
+                            <p><i class="fa fa-check-circle-o"></i> Status: <span>Available</span></p>
+                            <div><i class="fa fa-shield"></i> Trade with peace of mind and enjoy exclusive offers</div>
+                            <div><i class="fa fa-truck"></i> Free shipping and Fast delivery</div>
+                            <div><i class="fa fa-cogs"></i> Free Installation</div>
+                            
+                        </div>
+                        <div class="details-product tab-2">
+                            <ul>
+                                <li> Dimensions: 14.6’’ L x 27.2’’ W x 13.8’’ H | Weight: 53.02 lbs</li>
+                                <li> Your purchase includes: Portable Air Conditioner, Window Mount Kit, Quick Setup Guide, Remote Control (batteries not included).</li>
+                                <li> Handy and portable: the SereneLife portable air conditioner system features a lightweight, handy, sleek body design intended to be used in the bedroom, living room or garage at home or office. It features rolling wheels for easy portability</li>
+                                <li> 3 operating modes: The compact floor AC indoor cooler conditioning unit features a simple electric Plug in operation and introduces 3 modes Cooling, dehumidifier and fan. The default mode is cooling, It is automatically activated after power on</li>
+                                <li> Built in dehumidifier: You don’t only get the cooling effect of the portable AC but also helps reduce humidity levels, acts as purifier which makes your home less hospitable to allergens such as dust mites, mildew by selecting dehumidifier mode</li>
+                                <li> Remote control: features a digital touch button control panel which includes the power, mode, timer, temperature and fan speed settings. Other functions such as unit selector (Celsius/ Fahrenheit ), Sleep key can be adjusted using the included remote control</li>
+                                <li> 9000 BTU cooling power: with 900W rated power and 9000 BTU cooling power, the cold air can cover a room of up to 215+ sq. ft.. Air flow is rated at 290 M3/hr., moisture removal/dehumidifier at 1. 2 liters/hr. W/ an operating noise level of only 55 57 dB</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-buy">
+                        <div class="plus-items">
+                            <input type="number" name="" id="" value="1" min="1">
+                        </div>
+
+                        <a class="single-btn" href="cart.html"><i class="fa fa-heart"></i><span> Add to Cart</span></a>
+                        <a  class="single-btn" href="checkout.html"><i class="fa fa-cart-plus"></i> <span> Buy Now</span></a>
+                        <a  class="single-btn" href="compare.html"><span>Compare with similar products</span></a>
+                    </div>
+                    <div class="delivery-option">
+                        <p>* Delivery options may vary by region</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-details">
+            <div class="main-details-container">
+                <div class="main-details-btn">
+                    <button class="active-overview" data-list="mainbox-1">Overview</button>
+                    <button data-list="mainbox-2">Specifications</button>
+                    <button data-list="mainbox-4">User Guide</button>
+                </div>
+                <div class="main-details-box">
+                    <div class="overview-box mainbox-1">
+                        <div class="overview-container">
+                            <div class="overview-row">
+                                <div class="overview-text">
+                                    <h1>Spread Faster, Farther</h1>
+                                    <h2>Instant Cooling Fast Cooling</h2>
+                                    <p>Quickly disperse cool air to every corner of the room. Digital Inverter Boost technology accelerates air cooling by 43%. Improved design with 15% larger blower, 18% wider air intake and 31% wider louver, allowing cold air to be dispersed further and wider up to 15m.</p>
+                                </div>
+                                <div class="overview-img">
+                                    <img src="./imgcosy/panasonic/panasonic-details/introduction4.jpg" alt="">
+                                </div>
+                            </div>
+    
+                            <div class="overview-row">
+                                <div class="overview-img">
+                                    <img src="./imgcosy/panasonic/panasonic-details/vn-feature-wall-mount-450400975.jpg" alt="">
+                                </div>
+                                <div class="overview-text">
+                                    <h1>Auto Clean</h1>
+                                    <h2>Auto Clean Feature</h2>
+                                    <p>Save time and effort on cleaning equipment. Once activated, the Auto Clean feature automatically dries the heat exchanger using a rigorous 3-step process. Remove moisture by blowing air for 10 to 30 minutes, thereby preventing bacteria buildup and odors.</p>
+                                </div>
+                            </div>
+
+                            <div class="overview-row">
+                                <div class="overview-text">
+                                    <h1>Environmentally Friendly Refrigerant</h1>
+                                    <h2>Refrigerant R32</h2>
+                                    <p>Air conditioners use the new generation R32 refrigerant to help limit the impact on the ozone layer, thereby preventing global warming more effectively than conventional R22 or R410A refrigerants. Protect the Earth, control climate change with eco-friendly solutions* from Panasonic.</p>
+                                </div>
+                                <div class="overview-img">
+                                    <img src="./imgcosy/panasonic/panasonic-details/vn-feature-wall-mount-450400987.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="overview-row">
+                                <div class="overview-img">
+                                    <img src="./imgcosy/panasonic/panasonic-details/vn-feature-wall-mount-450400989.jpg" alt="">
+                                </div>
+                                <div class="overview-text">
+                                    <h1>Energy Saving, Efficient Cooling</h1>
+                                    <h2>ECO Mode</h2>
+                                    <p>Efficient cooling and energy optimization with air conditioners from Panasonic. ECO Mode uses less compressor power, thereby limiting power use* compared to normal mode. Operation is especially effective when the outdoor temperature is not too high, giving a comfortable cooling effect and saving money for your family..</p>
+                                </div>
+                            </div>
+
+                            <div class="overview-row">
+                                <div class="overview-text">
+                                    <h1>Enjoy Good Sleep All Night Long</h1>
+                                    <h2>Sleep Mode</h2>
+                                    <p>Sleep mode maintains the ideal temperature, limiting the cold wind to make a more comfortable night's sleep. Peace of mind sleep deeper, fall asleep faster, and wake up with more energy.</p>
+                                </div>
+                                <div class="overview-img">
+                                    <img src="./imgcosy/panasonic/panasonic-details/vn-feature-wall-mount-450400991.jpg" alt="">
+                                </div>
+                            </div>   
+                        </div>              
+                    </div>
+
+
+                    <div class="overview-box mainbox-2">
+                        <table>
+                            <tr>
+                                <th rowspan="1" colspan="2" scope="row">MODEL</th>
+                                <th rowspan="1" colspan="1" scope="row">[50Hz]</th>
+                                <td class="tb-blk">CS-XPU9XKH-8</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" colspan="1" scope="rowgroup">Cooling Capacity</th>
+                                <th rowspan="2" colspan="1" scope="rowgroup">(min-max)</th>
+                                <th rowspan="1" colspan="1" scope="row">kW</th>
+                                <td class="tb-blk">2.65 [0.84-2.90]</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">Btu/h</th>
+                                <td class="tb-blk">9,040 ( 2,860-9,890)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="3" scope="row">CSPF</th>
+                                <td class="tb-blk">4.81</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" colspan="1" scope="rowgroup">EER</th>
+                                <th rowspan="2" colspan="1" scope="rowgroup">(min-max)</th>
+                                <th rowspan="1" colspan="1" scope="row">Btu/hW</th>
+                                <td class="tb-blk">11.30(12.71-10.99)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">W/W</th>
+                                <td class="tb-blk">3.31 ( 3.73-3.22)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3" colspan="1" scope="rowgroup">Electrical Data</th>
+                                <th rowspan="1" colspan="1" scope="row">Voltage</th>
+                                <th rowspan="1" colspan="1" scope="row">V</th>
+                                <td class="tb-blk">220</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">Current</th>
+                                <th rowspan="1" colspan="1" scope="row">A</th>
+                                <td class="tb-blk">3.9</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">Power Input (min-max)</th>
+                                <th rowspan="1" colspan="1" scope="row">W</th>
+                                <td class="tb-blk">800( 225-900)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" colspan="2" scope="rowgroup">Moisture Removal</th>
+                                <th rowspan="1" colspan="1" scope="row">L/h</th>
+                                <td class="tb-blk">1.6</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">Pt/h</th>
+                                <td class="tb-blk">3.4</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" colspan="1" scope="rowgroup">Air Circulation</th>
+                                <th rowspan="1" colspan="1" scope="row">Indoor</th>
+                                <th rowspan="1" colspan="1" scope="row">m³/min (ft³/min)</th>
+                                <td class="tb-blk">10.3(365)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">Outdoor</th>
+                                <th rowspan="1" colspan="1" scope="row">m³/min (ft³/min)</th>
+                                <td class="tb-blk">26.7(940)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" colspan="1" scope="rowgroup">Noise Level</th>
+                                <th rowspan="1" colspan="1" scope="row">Indoor (H / L / Q-Lo)</th>
+                                <th rowspan="1" colspan="1" scope="row">dB[A]</th>
+                                <td class="tb-blk">36/26/21</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">Outdoor (H)</th>
+                                <th rowspan="1" colspan="1" scope="row">dB[A]</th>
+                                <td class="tb-blk">47</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="6" colspan="1" scope="rowgroup">Dimensions Indoor (Outdoor)</th>
+                                <th rowspan="2" colspan="1" scope="rowgroup">Height</th>
+                                <th rowspan="1" colspan="1" scope="row">mm</th>
+                                <td class="tb-blk">290(511)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">inch</th>
+                                <td class="tb-blk">11-7/16(20-1/8)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" colspan="1" scope="rowgroup">Width</th>
+                                <th rowspan="1" colspan="1" scope="row">mm</th>
+                                <td class="tb-blk">779(650)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">inch</th>
+                                <td class="tb-blk">30-11/16(25-19/32)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" colspan="1" scope="rowgroup">Depth</th>
+                                <th rowspan="1" colspan="1" scope="row">mm</th>
+                                <td class="tb-blk">209(230)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">inch</th>
+                                <td class="tb-blk">8-1/4 (9-1/16)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" colspan="1" scope="rowgroup">Net Weight</th>
+                                <th rowspan="1" colspan="1" scope="row">Indoor</th>
+                                <th rowspan="1" colspan="1" scope="row">kg[lb]</th>
+                                <td class="tb-blk">8[18]</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">Outdoor</th>
+                                <th rowspan="1" colspan="1" scope="row">kg[lb]</th>
+                                <td class="tb-blk">18(40)</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="4" colspan="1" scope="rowgroup">Refrigerant Pipe Diameter</th>
+                                <th rowspan="2" colspan="1" scope="rowgroup">Liquid Side</th>
+                                <th rowspan="1" colspan="1" scope="row">mm</th>
+                                <td class="tb-blk">ᴓ6.35</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">inch</th>
+                                <td class="tb-blk">¼</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="2" colspan="1" scope="rowgroup">Gas Side</th>
+                                <th rowspan="1" colspan="1" scope="row">mm</th>
+                                <td class="tb-blk">ᴓ9.52</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">inch</th>
+                                <td class="tb-blk">3/8</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="4" colspan="1" scope="rowgroup">Pipe Extension</th>
+                                <th rowspan="1" colspan="1" scope="row">Chargeless Pipe Length</th>
+                                <th rowspan="1" colspan="1" scope="row">m</th>
+                                <td class="tb-blk">7.5</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">Maximum Pipe Length</th>
+                                <th rowspan="1" colspan="1" scope="row">m</th>
+                                <td class="tb-blk">20</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">Maximum Elevation Length</th>
+                                <th rowspan="1" colspan="1" scope="row">m</th>
+                                <td class="tb-blk">15</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="1" scope="row">Additional Refrigerant Gas*</th>
+                                <th rowspan="1" colspan="1" scope="row">g/m</th>
+                                <td class="tb-blk">10</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="1" colspan="3" scope="row">Power Supply</th>
+                                <td class="tb-blk">Indoor</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="overview-box mainbox-4">
+                        <div class="download-text">
+                            <div>
+                                <h3>24 hour air purifier</h3>
+                                <p>With nanoe™ technology</p>
+                            </div>
+                            <div>
+                                <h3>ECO mode with A.I technology.<br> Control</h3>
+                                <p>Save energy up to 20%</p>
+                            </div>
+                            <div>
+                                <h3>Inverter Technology</h3>
+                                <p>Precise temperature control</p>
+                            </div>
+                            <a href="https://drive.google.com/file/d/1NNR4Hgv6QtK0LEZ0VZiOd0lXGdMDDK00/view?usp=sharing" target="_blank" ><i class="fa fa-download"></i> Download!</a>
+                        </div>
+                        <div class="download-img">
+                            <img src="./imgcosy/panasonic/panasonic-details/ast-1317662.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div class="related">
+            <div class="related-title">
+                <p>Related Products</p>
+                <a href="products.html">View More</a>
+            </div>
+            <div class="related-product">
+                <div class="related-product-container">
+                    <!-- product-5 -->
+                    <div class="home-product-box">
+                        <a href="Panasonic.html">
+                            <div class="home-product-img">
+                                <img src="./imgcosy/LG/lg-v18enf1-ePHFb5.png">
+                                <div class="img-overlay"></div>
+                                
+                                <ul class="side-icons">
+                                    <span><i class="fa fa-search"></i></span>
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-map-marker"></i></span>
+                                </ul>
+                                <ul class="details-demo">
+                                    <li>Type: One-way</li>
+                                    <li>Feature: Inverter</li>
+                                    <li>Wattage: 8000 BTU</li>
+                                    <li>Guarantee: 6 Years</li>
+                                </ul>
+                            </div>
+                        </a>
+                       
+                        <div class="bottom">
+                            <a href="Panasonic.html">LG-UIGH10</a>
+                            <div class="price">
+                                <div class="price-view">
+                                     <span>$419</span>
+                                     <span class="view-product">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-half-o"></i> (11)
+                                    </span> 
+                                </div>
+                                <div class="addCart">
+                                    <a href="cart.html"><i class="fa fa-cart-plus"></i></a> 
+                                    <a href="products.html">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-product-box">
+                        <a href="Panasonic.html">
+                            <div class="home-product-img">
+                                <img src="./imgcosy/Daikin/daikin-atf25uv1v-ohoi11.png">
+                                <div class="img-overlay"></div>
+                                
+                                <div class="box-sale">
+                                    <h3>20% Sale</h3>
+                                </div>
+                                <ul class="side-icons">
+                                    <span><i class="fa fa-search"></i></span>
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-map-marker"></i></span>
+                                </ul>
+                                <ul class="details-demo">
+                                    <li>Type: One-way</li>
+                                    <li>Feature: Inverter</li>
+                                    <li>Wattage: 9000 BTU</li>
+                                    <li>Guarantee: 6 Years</li>
+                                </ul>
+                            </div>
+                        </a> 
+                        <div class="bottom">
+                            <a href="Panasonic.html">Daikin-ATF25UV1V</a>
+                            <div class="price">
+                                <div class="price-view">
+                                    <span><strike>$420</strike>/ $336</span>
+                                    <span class="view-product">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-o"></i> (65)
+                                    </span> 
+                                </div>
+                                <div class="addCart">
+                                    <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                    <a href="products.html">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                   <!-- product-2 -->
+                   <div class="home-product-box">
+                        <a href="Panasonic.html">
+                            <div class="home-product-img">
+                                <img src="./imgcosy/samsung/samsung-ar10tyhycwknsv-49j2lo.png" >
+                                <div class="img-overlay"></div>
+
+                                <ul class="side-icons">
+                                    <span><i class="fa fa-search"></i></span>
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-map-marker"></i></span>
+                                </ul>
+                                <ul class="details-demo">
+                                    <li>Type: One-way</li>
+                                    <li>Feature: Inverter</li>
+                                    <li>Wattage: 9000 BTU</li>
+                                    <li>Guarantee: 6 Years</li>
+                                </ul>
+                            </div>
+                        </a>
+                    
+                        <div class="bottom">
+                            <a href="Panasonic.html">Samsung-M10HZU1</a>
+                            <div class="price">
+                                <div class="price-view">
+                                    <span>$799</span>
+                                    
+                                    <span class="view-product">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i> (42)
+                                    </span> 
+                                </div>
+                                <div class="addCart">
+                                    <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                    <a href="products.html">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                   <!-- product-2 -->
+                   <div class="home-product-box">
+                        <a href="Panasonic.html">
+                            <div class="home-product-img">
+                                <img src="./imgcosy/LG/lg-v10api1-qJLPJm.png">
+                                <div class="img-overlay"></div>
+                                <div class="box-sale">
+                                    <h3>15% sale</h3>
+                                </div>
+                                <ul class="side-icons">
+                                    <span><i class="fa fa-search"></i></span>
+                                    <span><i class="fa fa-heart"></i></span>
+                                    <span><i class="fa fa-map-marker"></i></span>
+                                </ul>
+                                <ul class="details-demo">
+                                    <li>Type: One-way</li>
+                                    <li>Feature: Inverter</li>
+                                    <li>Wattage: 9400 BTU</li>
+                                    <li>Guarantee: 7 Years</li>
+                                </ul>
+                            </div>
+                        </a>
+                        <div class="bottom">
+                            <a href="Panasonic.html">LG-V10API1</a>
+                            <div class="price">
+                                <div class="price-view">
+                                    <span><strike>$512</strike>/ $435</span>
+                                    <span class="view-product">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-o"></i> (151)
+                                    </span> 
+                                </div>
+                                <div class="addCart">
+                                    <a href="cart.html"><i class="fa fa-cart-plus"></i></a>
+                                    <a href="products.html">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+        <div class="panasonic-review-list" id="section1">
+            <div class="review-form">
+                <div class="review-customer">
+                    <span style="color: #000;">Your Review: </span> 
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <form action="" class="form-comment">
+                    <textarea placeholder="Comment..."></textarea>
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">      
+                    <button type="button">Submit</button>
+                </form>
+            </div>
+
+            <div class="review-container">
+                <!-- review - 1 -->
+                <div class="review-box">
+                    <div class="panasonic-review">
+                        <div class="profile-customer">
+                            <div class="avt-customer">
+                                <img src="./image/avatar/customer-01.jpg">
+                            </div>
+                            <div class="info-customer">
+                                <strong>Adam Wilson</strong>
+                                <span>@evelynW</span>
+                            </div>
+                        </div>
+                        <div class="review-customer">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                        </div>
+                    </div>
+                    <div class="comment-customer">
+                        <p>Buy this now! This was so user friendly to set up, love the remote for control, noise level is minimal, but most importantly - IT COOLS, fast! Definitely worth the money.</p>
+                    </div>
+                </div>
+                <!-- review - 2 -->
+                <div class="review-box">
+                    <div class="panasonic-review">
+                        <div class="profile-customer">
+                            <div class="avt-customer">
+                                <img src="./image/avatar/customer-06.jpg">
+                            </div>
+                            <div class="info-customer">
+                                <strong>Tony Stark</strong>
+                                <span>@ScarletA</span>
+                            </div>
+                        </div>
+                        <div class="review-customer">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                    <div class="comment-customer">
+                        <p>This is an energy saver.</p>
+                    </div>
+                </div>
+                <!-- review - 3 -->
+                <div class="review-box">
+                    <div class="panasonic-review">
+                        <div class="profile-customer">
+                            <div class="avt-customer">
+                                <img src="./image/avatar/customer-08.jpg">
+                            </div>
+                            <div class="info-customer">
+                                <strong>Peter Parker</strong>
+                                <span>@LilyT</span>
+                            </div>
+                        </div>
+                        <div class="review-customer">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="comment-customer">
+                        <p>We have three air conditioners in the home. Very similar to this one. But this one works so great, we wish the other two were the same brand.</p>
+                    </div>
+                </div>
+                <!-- review - 4 -->
+                <div class="review-box">
+                    <div class="panasonic-review">
+                        <div class="profile-customer">
+                            <div class="avt-customer">
+                                <img src="./image/avatar/person2.jpg">
+                            </div>
+                            <div class="info-customer">
+                                <strong>Lucy Nguyen</strong>
+                                <span>@LucyN</span>
+                            </div>
+                        </div>
+                        <div class="review-customer">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                        </div>
+                    </div>
+                    <div class="comment-customer">
+                        <p>We use this unit for air conditioning mostly. It's a bit noisy but not too loud to sleep. It's easy to set up and use.</p>
+                    </div>
+                </div>
+                <!-- PAGINATION -->
+                <div>
+                    <ul class="pagination">
+                        <span>1</span>
+                        <span>2</span>
+                        <span class="icon">››</span>
+                        <span class="last">Last »</span>
+                    </ul>
+                </div>   
+            </div> 
+        </div>   
+        <!-------------- promise ----------------->
+        <section class="home-service">
+            <h3 class="title">QUALITY PROMISE</h3>
+            <div class="promise-container">
+                <div class="promise-section">
+                    <div class="promise-box">
+                        <div class="promise-img"><img src="./image/Faq-icon/Cruise-Promise-Icons-01.png" width="60%"></div>
+                        <div class="promise-text">
+                            <h4>INNOVATION FIRST</h4>
+                            <p>A pioneer in air care technology for over 27 years.</p>
+                        </div>
+                    </div>
+                    <div class="promise-box">
+                        <div class="promise-img"><img src="./image/Faq-icon/Cruise-Promise-Icons-03.png" width="60%"></div>
+                        <div class="promise-text">
+                            <h4>BUILT HEAVY DUTY</h4>
+                            <p>Durable and robust build to weather extreme coastal climate conditions.</p>
+                        </div>
+                    </div>
+                    <div class="promise-box">
+                        <div class="promise-img"><img src="./image/Faq-icon/Cruise-Promise-Icons-02.png" width="60%"></div>
+                        <div class="promise-text">
+                            <h4>LIFETIME WARRANTY</h4>
+                            <p>A revolutionary 10 year warranty on inverter compresors.</p>
+                        </div>
+                    </div>
+                    <div class="promise-box">
+                        <div class="promise-img"><img src="./image/Faq-icon/Cruise-Promise-Icons-05.png" width="60%"></div>
+                        <div class="promise-text">
+                            <h4>LONG LIFESPAN</h4>
+                            <p>100% copper technology for 3x longer durability and low cost maintenance.</p>
+                        </div>
+                    </div>
+                    <div class="promise-box">
+                        <div class="promise-img"><img src="./image/Faq-icon/Cruise-Promise-Icons-04.png" width="60%"></div>
+                        <div class="promise-text">
+                            <h4>GLOBALLY CERTIFIED</h4>
+                            <p>ISO quality operations OEM’s for global HVAC Co’s.</p>
+                        </div>
+                    </div>
+                    <div class="promise-box">
+                        <div class="promise-img"><img src="./image/Faq-icon/Cruise-Promise-Icons-06.png" width="60%"></div>
+                        <div class="promise-text">
+                            <h4>EASY TO MAINTAIN</h4>
+                            <p>Professional support with a nationwide network.<br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------- footer ----------------->
+        <footer class="footer">
+            <div class="home-container">
+                <div class="footer-row">
+                    <div class="footer-col-1">
+                        <ul>
+                            <li>
+                                <h3>Cosy company</h3>
+                                <p>We always provide you with the best quality products at a reasonable price. Besides. we have a professional support team. Always consult and make customers satisfied</p>
+                            </li>
+                            <li>
+                                <a href="contact.html"><i class="fa fa-map-marker">&#160;&#160;</i>8A Ton That Thuyet, My Dinh, Ha Noi</a>
+                            </li>
+                            <li>
+                                <a href="tel:+849666666666"><i class="fa fa-phone">&#160;&#160;</i>+84-96-6666-6666</a>
+                            </li>
+                            <li>
+                                <a href="mailto:support@cosy.com"><i class="fa fa-envelope">&#160;&#160;</i>support@cosy.com</a>
+                            </li>
+                            <div class="social-links">
+                                <a href="http://facebook.com"><i class="fa fa-facebook-f"></i></a>
+                                <a href="http://twitter.com"><i class="fa fa-twitter"></i></a>
+                                <a href="http://instagram.com"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="footer-col ">
+                        <h4>Information</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="warranty.html">Warranty</a></li>
+                            <li><a href="request.html">Service Request</a></li>
+                        </ul>
+                    </div> 
+
+                    <div class="footer-col ">
+                        <h4>Showroom TP.HCM </h4>
+                        <div>
+                            <ul>
+                                <li>    
+                                    <div class="footer-showroom">
+                                        <h1>Showroom 1</h1>
+                                        <p>Adress : <span>886, Dong Da,TP.HCM</span></p>
+                                        <p>Support : <a href="tel:0812 992 334">0812 992 334</a></p>
+                                        <p>Email : <a href="mailto:cosy886@gmail.com">Cosy_886@gmail.com</a></p>
+                                    </div>
+                                </li>
+    
+                                <li>
+                                    <div class="footer-showroom">
+                                        <h1>Showroom 2</h1>
+                                        <p>Adress : <span>216, Thai Ha, TP.HCM</span></p>
+                                        <p>Support : <a  href="tel:0930 858 124">0930 858 124</a></p>
+                                        <p>Email : <a href="mailto:Cosy_216@gmail.com">Cosy_216@gmail.com</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>   
+                    </div>
+                    <div class="footer-col">
+                        <h4>Showroom Ha Noi </h4>
+                        <div>
+                            <ul>    
+                                <li>
+                                    <div class="footer-showroom">
+                                        <h1>Showroom 1</h1>
+                                        <p>Adress : <span>79B, Hai Ba Trung, Ha Noi</span></p>
+                                        <p>Support : <a href="tel:0693 993 323">0693 993 323</a></p>
+                                        <p>Email : <a href="mailto:Cosy_79B@gmail.com">Cosy_79B@gmail.com</a></p>
+                                    </div>   
+                                </li> 
+    
+                                <li>
+                                    <div class="footer-showroom ">
+                                        <h1>Showroom 2</h1>
+                                        <p>Adress : <span>8, Ba Dinh, Ha Noi</span></p>
+                                        <p>Support : <a  href="tel:0685 221 999">0685 221 999</a></p>
+                                        <p>Email : <a href="mailto:Cosy_8BaDinh@gmail.com">Cosy_8Ba@gmail.com</a></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>   
+                    </div>
+                   
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <p>Coyright &#169; 2021 CosyCompany. All Right Reserved</p>
+                <a href="warranty.html">Terms of Use</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+        </footer>
+
+        <!------------- chat-popup ----------------->
+        <div>
+            <input type="checkbox" id="click">
+            <label class="chat-click" for="click">
+                <i class="fa fa-times"></i>
+                <i class="fa fa-comments-o"></i>
+            </label>
+            <div class="popup-chat">
+                <div class="head-text">
+                    <i class="fa fa-user"></i> Servicer Online <span><i class="fa fa-circle"></i></span>
+                </div>
+                <div class="chat-box">
+                    <div class="desc-text">
+                        Please fill out the form below to start chatting with the next available agent.
+                    </div>
+                    <form action="#">
+                        <div class="field">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="field">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Messenger" required></textarea>
+                        </div>
+                        <div class="field">
+                            <button type="submit">Start chat</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!------------- click-scroll-top ----------------->
+        <div onclick="scrollToTop();" class="scrollTop"><i class="fa fa-chevron-up"></i></div>
+    </section>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/loading.js"></script> 
+    <script type="text/javascript" src="js/lightslider.js"></script> 
+    <script type="text/javascript" src="js/jquery.nice-number.js"></script> 
+    <!---------- Login - register ---------->
+    <script type="text/javascript">
+        function toggleForm() {
+            secttion = document.querySelector('.form');
+            container = document.querySelector('.home-user-form');
+            container.classList.toggle('active-user');
+            secttion.classList.toggle('active-user');
+        }
+    </script>
+
+    <!---------- click-drop-menu-bar ---------->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-mobile-list li').click(function(){
+                $(this).siblings().removeClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#lightSlider').lightSlider({
+                auto: true,
+                speed: 600,
+                gallery:true,
+                adaptiveHeight: true,
+                item:1,
+                loop:true,
+                thumbItem:8,
+                thumbMargin:6,
+                verticalHeight:500,
+                slideMargin:0,
+                enableDrag: false,
+                currentPagerPosition:'left',
+                onSliderLoad: function(el) {
+                    el.lightGallery({
+                        selector: '#lightSlider .lslide'
+                    });
+                }   
+            });  
+        });
+    </script>
+
+    <script type="text/javascript">
+         $(document).ready(function(){
+            $('.details-container .details-product').hide();
+            $('.details-container .details-product:first-child').show();
+            $('.details-btn button').click(function(){
+                $('.details-btn button').removeClass('active-details')
+                $(this).addClass('active-details')
+
+                var activeDetails = $(this).attr('data-list');
+                $('.details-container .details-product').hide();
+                $('.'+activeDetails).show();
+            });
+        });
+    </script>
+    <script>
+        $(function(){
+            $('input[type="number"]').niceNumber();
+        });
+    </script>
+
+     <script type="text/javascript">
+        $(document).ready(function(){
+           $('.main-details-container .overview-box').hide();
+           $('.main-details-container .overview-box:first-child').show();
+           $('.main-details-btn button').click(function(){
+               $('.main-details-btn button').removeClass('active-overview')
+               $(this).addClass('active-overview')
+
+               var mainDetails = $(this).attr('data-list');
+               $('.main-details-container .overview-box').hide();
+               $('.'+mainDetails).show();
+           });
+       });
+   </script>
+
+</body>
+</html>
