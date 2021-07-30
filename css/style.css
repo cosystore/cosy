@@ -1713,10 +1713,19 @@ section .home-user-form.active-user .login-box .imgBx
     z-index: 2;
 }
 .feedback .home-col-2{
+    text-align: justify;
     align-items: center;
+    display: flex;
+    flex-direction: column;
     padding: 40px 20px;
     cursor: pointer;
     transition: all ease 500ms;
+}
+.feedback .home-col-2:nth-child(1){
+    transform: translateY(-15px);
+}
+.feedback .home-col-2:nth-child(2){
+    transform: translateY(-10px);
 }
 .feedback .home-col-2 i.fa-quote-left{
     font-size: 50px;
@@ -1744,6 +1753,12 @@ section .home-user-form.active-user .login-box .imgBx
 }
 .feedback .home-col-2:hover{
     transform: translateY(-10px);
+}
+.feedback .home-col-2:nth-child(1):hover{
+    transform: translateY(-25px);
+}
+.feedback .home-col-2:nth-child(2):hover{
+    transform: translateY(-20px);
 }
 @media (max-width: 1300px){
     .home-testimonial .home-row{
