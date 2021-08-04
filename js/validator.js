@@ -117,7 +117,8 @@ Validator.isPhone = function (selector, message){
     return {
         selector: selector,
         test: function (value) {
-         return value.trim() ? undefined : message || 'Please enter your phone number';
+            var phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+            return phoneRegex.test(value) ? undefined : message || 'Please enter your phone number';
          }
      };
 }

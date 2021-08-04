@@ -405,14 +405,16 @@
                                         <h3>Shipping Options</h3>
                                     </div>
                                 </div>
-                                <div class="shipping-form">
+                                <div class="shipping-form form-group">
                                     <div class="ship-1">
-                                        <input type="radio" id="pre-ship" name="ship">
+                                        <input class="form-control" type="radio" value="premium" id="pre-ship" name="ship">
                                         <label for="pre-ship">Premium shipping method (3-5 days) - <span>$20.00</span></label>
+                                        <span class="form-message"></span>
                                     </div>
                                     <div class="ship-2">
-                                        <input type="radio" id="free-ship" name="ship">
+                                        <input class="form-control" type="radio" value="free" id="free-ship" name="ship">
                                         <label for="free-ship">Free shipping (7-8 days) - <span>Free shipping</span></label>
+                                        <span class="form-message"></span>
                                     </div>  
                                 </div>
                             </div>
@@ -426,21 +428,22 @@
                                         <h3>Billing Options</h3>
                                     </div>
                                 </div>
-                                <div class="billing-form">
+                                <div class="billing-form form-group">
                                     <div class="bill">
                                         <div>
-                                            <input type="radio"  name="bill" id="cod">
+                                            <input class="form-control" type="radio" value="cash"  name="bill" id="cod">
                                             <label for="cod">Cashiers Check or Cash Only</label>
+                                            <span class="form-message"></span>
                                         </div>
                                         <div class="cash-img">
                                             <img src="./image/logo/logo-cash.jpg">
                                         </div>
-                                        
                                     </div>
                                     <div class="bill">
                                         <div class="credit-card">
-                                            <input type="radio" name="bill" id="credit">
+                                            <input class="form-control" type="radio" value="credit" name="bill" id="credit">
                                             <label for="credit">Credit Card</label>
+                                            <span class="form-message"></span>
                                         </div>
                                         <div class="credit-img">
                                             <img src="./image/logo/logo-mastercard.jpg">
@@ -449,8 +452,9 @@
                                     </div>
                                     <div class="bill">
                                         <div class="paypal-card">
-                                            <input type="radio" name="bill" id="paypal">
+                                            <input class="form-control" type="radio" value="paypal" name="bill" id="paypal">
                                             <label for="paypal">Paypal</label>
+                                            <span class="form-message"></span>
                                         </div>
                                         <div class="paypal-img">
                                             <img src="./image/logo/logo-paypal.jpg">
@@ -718,6 +722,8 @@
                 Validator.isAddress('#address', 'Enter Your Address'),
                 Validator.isZip('#zip', 'Enter Your Postcode'),
                 Validator.isCity('#city', 'Choose Your City'),
+                // Validator.isShip('input[name="ship"]'),
+                // Validator.isBill('input[name="bill"]'),
             ]
         });
     </script>
