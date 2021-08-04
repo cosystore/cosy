@@ -35,7 +35,7 @@
         $('.form').addClass('home-user-form-active').removeClass('forgot-active')
     });
     /*-- confirm-box --*/
-    $(document).on('click','.submit-btn',function(){
+    $(document).on('click','.form-submit',function(){
         $('.form').addClass('confirm-active').removeClass('forgot-active')
     });     
     /*-- cancel-login --*/

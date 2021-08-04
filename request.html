@@ -271,11 +271,20 @@
                 </a>
                 <h2>Forget password</h2>
                 <!--inputs-->
-                <form>
-                    <input type="email" placeholder="Email Adress" required>
-                    <input type="text" placeholder="Username" required>
-                    <input type="submit" value="Submit" class="submit-btn">
+                <form id="form-1">
+                    <div class="form-group">
+                        <label for="email" class="form-lable"></label>
+                        <input class="form-control" id="email" type="text" placeholder="Email Adress" >
+                        <span class="form-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="fullname" class="form-lable"></label>
+                        <input class="form-control" id="fullname" type="text" placeholder="Username">
+                        <span class="form-message"></span>
+                    </div>
+                    <button class="form-submit">Submit</button>        
                 </form>
+
                 <!--forget-and-sign-up-btn-->
                 <div class="form-btns">
                     <a class="already-account">
@@ -590,6 +599,22 @@
                 $(this).siblings().removeClass('active');
                 $(this).toggleClass('active');
             });
+        });
+    </script>
+    <!-- validator js -->
+    <!-- Mong muon cua chung ta -->
+    <script type="text/javascript">
+        Validator({
+            form: '#form-1',
+            errorSelector: '.form-message',
+            rules:  [
+                Validator.isRequired('#fullname', 'Enter Your Name'),
+                Validator.isEmail('#email', 'Enter Your Email'),
+                Validator.minLength('#password, 6', 'Vui long nhap mat khau'),
+                Validator.isConfirmed('#password-confirmation', function(){
+                    return document.querySelector('#form-1 #password').value;
+                }, 'Mat khau nhap lai khong chinh xac')
+            ]
         });
     </script>
 </body>
