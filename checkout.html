@@ -47,7 +47,7 @@
 
 <body>
     <!---------- Preloader ---------->
-    <div id="home-preloader"></div>
+    <!-- <div id="home-preloader"></div> -->
 
     <section class="home-main">
         <!---------- Social-Mini-Icon ---------->
@@ -252,8 +252,8 @@
                         </a>
                         <form>
                             <h2>Sign in</h2>
-                            <input type="text" placeholder="Username" required>
-                            <input type="password" placeholder="Password" required>
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
                             <input type="submit" value="Login"><br>
 
                             <a class="forget-btn">Forget Your Password?</a>
@@ -270,10 +270,10 @@
                                 <i class="fa fa-times"></i>
                             </a>
                             <h2>Create an account</h2>
-                            <input type="text" placeholder="Username" required>
-                            <input type="email" placeholder="Email Address" required>
-                            <input type="password" placeholder="Create Password" required>
-                            <input type="password" placeholder="Confirm Password" required>
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email Address">
+                            <input type="password" placeholder="Create Password">
+                            <input type="password" placeholder="Confirm Password">
                             <input type="submit" value="Sign Up">
                             <p class="signup">Already have an account?&#160;<a href="#" onclick="toggleForm();"> Sign in</a></p>
                         </form>
@@ -290,8 +290,8 @@
                 <h2>Forget password</h2>
                 <!--inputs-->
                 <form>
-                    <input type="email" placeholder="Email Adress" required>
-                    <input type="text" placeholder="Username" required>
+                    <input type="email" placeholder="Email Adress">
+                    <input type="text" placeholder="Username">
                     <input type="submit" value="Submit" class="submit-btn">
                 </form>
                 <!--forget-and-sign-up-btn-->
@@ -328,202 +328,209 @@
            
             <section class="checkout-page">
                 <div class="checkout-container">
-                    <div class="checkout-box-1">
-                        <div class="checkout-title">
-                            <div class="title-number">
-                                <p>1</p>
-                            </div>
-                            <div class="title-tag">
-                                <h3>Billing Address</h3>
-                            </div>
-                        </div>
-                        <div class="checkout-form">
-                            <form>
-                                <div class="form-name">
-                                    <div class="first-name">
-                                        <label for="firstname">First Name <span>*</span></h4>
-                                        <input type="text" id="firstname" required name="firstname" >
-                                    </div>
-                                    <div class="last-name">
-                                        <label for="lastname">Last Name <span>*</span></h4>
-                                        <input type="text" required id="lastname" required  name="lastname">
-                                    </div>
-                                </div>
-                                <div class="form-email">
-                                    <label for="email">Email <span>*</span></label>
-                                    <input type="email" id="email" required name="email">
-                                </div>
-                                <div class="form-phone">
-                                    <label for="phone">Phone</label>
-                                    <input type="tel" id="phone" name="phone" >
-                                </div>
-                                <div class="form-address">
-                                    <label for="address">Address <span>*</span></label>
-                                    <input type="text" id="address" required name="address">
-                                </div>
-                                <div class="form-city">
-                                    <div class="city">
-                                        <label for="city">City <span>*</span></label>
-                                        <select name="city" required id="city">
-                                            <option value="hanoi">Hà Nội</option>
-                                            <option value="tphcm">TP. Hồ Chí Minh</option>
-                                            <option value="danang">Đà Nẵng</option>
-                                            <option value="haiphong">Hải Phòng</option> <option value="cantho">Cần Thơ</option>
-                                            <option value="thanhhoa">Thanh Hoá</option>
-                                        </select>
-                                    </div>
-                                    <div class="zip">
-                                        <label for="zip">Zip/postal code <span>*</span></label>
-                                        <input type="text" name="zip" id="zip" required>
-                                    </div>
-                                </div>
-                                
-                            </form>
-                        </div>
-                    </div>
-                    <div class="checkout-box-2">
-                        <div class="checkout-box-top">
+                    <form id="form-2">
+                        <div class="checkout-box-1">
                             <div class="checkout-title">
                                 <div class="title-number">
-                                    <p>2</p>
+                                    <p>1</p>
                                 </div>
                                 <div class="title-tag">
-                                    <h3>Shipping Options</h3>
+                                    <h3>Billing Address</h3>
                                 </div>
                             </div>
-                            <div class="shipping-form">
-                                <div class="ship-1">
-                                    <input type="radio" id="pre-ship" name="ship">
-                                    <label for="pre-ship">Premium shipping method (3-5 days) - <span>$20.00</span></label>
-                                </div>
-                                <div class="ship-2">
-                                    <input type="radio" id="free-ship" name="ship">
-                                    <label for="free-ship">Free shipping (7-8 days) - <span>Free shipping</span></label>
-                                </div>  
-                            </div>
-                        </div>
-    
-                        <div class="checkout-box-bottom">
-                            <div class="checkout-title">
-                                <div class="title-number">
-                                    <p>3</p>
-                                </div>
-                                <div class="title-tag">
-                                    <h3>Billing Options</h3>
-                                </div>
-                            </div>
-                            <div class="billing-form">
-                                <div class="bill">
-                                    <div>
-                                        <input type="radio"  name="bill" id="cod">
-                                        <label for="cod">Cashiers Check or Cash Only</label>
-                                    </div>
-                                    <div class="cash-img">
-                                        <img src="./image/logo/logo-cash.jpg">
-                                    </div>
-                                    
-                                </div>
-                                <div class="bill">
-                                    <div class="credit-card">
-                                        <input type="radio" name="bill" id="credit">
-                                        <label for="credit">Credit Card</label>
-                                    </div>
-                                    <div class="credit-img">
-                                        <img src="./image/logo/logo-mastercard.jpg">
-                                        <img src="./image/logo/logo-visa.jpg">
-                                    </div>
-                                </div>
-                                <div class="bill">
-                                    <div class="paypal-card">
-                                        <input type="radio" name="bill" id="paypal">
-                                        <label for="paypal">Paypal</label>
-                                    </div>
-                                    <div class="paypal-img">
-                                        <img src="./image/logo/logo-paypal.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="checkout-box-3">
-                        <div class="checkout-title">
-                            <div class="title-number">
-                                <p>4</p>
-                            </div>
-                            <div class="title-tag">
-                                <h3>Review your order</h3>
-                            </div>
-                        </div>
-    
-    
-                        <div class="review-form">
-                            <table>
-                                <tr>
-                                    <th>Product</th>
-                                    <th>Quantity</th>
-                                    <th>Subtotal</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <div class="review-product">      
-                                            <div>
-                                                <img src="./imgcosy/panasonic/panasonic-N12UKH.png">
-                                                <p>PANASONIC 9000BTU CS-PU12WKH-8M</p>
-                                            </div>
+                            <div class="checkout-form">
+                                    <div class="form-name">
+                                        <div class="first-name form-group">
+                                            <label for="firstname">First Name <span>*</span></h4>
+                                            <input type="text" id="firstname" name="firstname" >
+                                            <span class="form-message"></span>
                                         </div>
-                                    </td>   
-                                    <td>1</td>
-                                    <td>$599.00</td>
-                                </tr>
-                            </table>
-                            <div class="total-price">
+                                        <div class="last-name form-group">
+                                            <label for="lastname">Last Name <span>*</span></h4>
+                                            <input type="text" id="lastname"  name="lastname">
+                                            <span class="form-message"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-email form-group">
+                                        <label for="emailcheck">Email <span>*</span></label>
+                                        <input type="text" id="emailcheck" name="email">
+                                        <span class="form-message"></span>
+                                    </div>
+                                    <div class="form-phone form-group">
+                                        <label for="phone">Phone</label>
+                                        <input type="tel" id="phone" name="phone" >
+                                        <span class="form-message"></span>
+                                    </div>
+                                    <div class="form-address form-group">
+                                        <label for="address">Address <span>*</span></label>
+                                        <input type="text" id="address" name="address">
+                                        <span class="form-message"></span>
+                                    </div>
+                                    <div class="form-city">
+                                        <div class="city">
+                                            <label for="city">City <span>*</span></label>
+                                            <select name="city" id="city">
+                                                <option value="hanoi">Hà Nội</option>
+                                                <option value="tphcm">TP. Hồ Chí Minh</option>
+                                                <option value="danang">Đà Nẵng</option>
+                                                <option value="haiphong">Hải Phòng</option> <option value="cantho">Cần Thơ</option>
+                                                <option value="thanhhoa">Thanh Hoá</option>
+                                            </select>
+                                            <span class="form-message"></span>
+                                        </div>
+                                        <div class="zip form-group">
+                                            <label for="zip">Zip/postal code <span>*</span></label>
+                                            <input type="text" name="zip" id="zip">
+                                            <span class="form-message"></span>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="checkout-box-2">
+                            <div class="checkout-box-top">
+                                <div class="checkout-title">
+                                    <div class="title-number">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="title-tag">
+                                        <h3>Shipping Options</h3>
+                                    </div>
+                                </div>
+                                <div class="shipping-form">
+                                    <div class="ship-1">
+                                        <input type="radio" id="pre-ship" name="ship">
+                                        <label for="pre-ship">Premium shipping method (3-5 days) - <span>$20.00</span></label>
+                                    </div>
+                                    <div class="ship-2">
+                                        <input type="radio" id="free-ship" name="ship">
+                                        <label for="free-ship">Free shipping (7-8 days) - <span>Free shipping</span></label>
+                                    </div>  
+                                </div>
+                            </div>
+        
+                            <div class="checkout-box-bottom">
+                                <div class="checkout-title">
+                                    <div class="title-number">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="title-tag">
+                                        <h3>Billing Options</h3>
+                                    </div>
+                                </div>
+                                <div class="billing-form">
+                                    <div class="bill">
+                                        <div>
+                                            <input type="radio"  name="bill" id="cod">
+                                            <label for="cod">Cashiers Check or Cash Only</label>
+                                        </div>
+                                        <div class="cash-img">
+                                            <img src="./image/logo/logo-cash.jpg">
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="bill">
+                                        <div class="credit-card">
+                                            <input type="radio" name="bill" id="credit">
+                                            <label for="credit">Credit Card</label>
+                                        </div>
+                                        <div class="credit-img">
+                                            <img src="./image/logo/logo-mastercard.jpg">
+                                            <img src="./image/logo/logo-visa.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="bill">
+                                        <div class="paypal-card">
+                                            <input type="radio" name="bill" id="paypal">
+                                            <label for="paypal">Paypal</label>
+                                        </div>
+                                        <div class="paypal-img">
+                                            <img src="./image/logo/logo-paypal.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="checkout-box-3">
+                            <div class="checkout-title">
+                                <div class="title-number">
+                                    <p>4</p>
+                                </div>
+                                <div class="title-tag">
+                                    <h3>Review your order</h3>
+                                </div>
+                            </div>
+        
+        
+                            <div class="review-form">
                                 <table>
                                     <tr>
-                                        <td>Subtotal</td>
+                                        <th>Product</th>
+                                        <th>Quantity</th>
+                                        <th>Subtotal</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="review-product">      
+                                                <div>
+                                                    <img src="./imgcosy/panasonic/panasonic-N12UKH.png">
+                                                    <p>PANASONIC 9000BTU CS-PU12WKH-8M</p>
+                                                </div>
+                                            </div>
+                                        </td>   
+                                        <td>1</td>
                                         <td>$599.00</td>
                                     </tr>
-                                    <tr>
-                                        <td>Tax</td>
-                                        <td>$50.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Warranty</td>
-                                        <td>$50.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Discound</td>
-                                        <td>-20%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Total</td>
-                                        <td>$579.00</td>
-                                    </tr>
                                 </table>
+                                <div class="total-price">
+                                    <table>
+                                        <tr>
+                                            <td>Subtotal</td>
+                                            <td>$599.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tax</td>
+                                            <td>$50.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Warranty</td>
+                                            <td>$50.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Discound</td>
+                                            <td>-20%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td>$579.00</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="review-code">
+                                <div class="apply-giftcode">
+                                    <input type="text" name="giftcode" id="">
+                                    <button type="submit">Apply</button>
+                                </div>
+                                <div class="apply-comment">
+                                    <label for="comment">You can leave us a comment here</label>
+                                    <textarea name="comment" id="comment" placeholder="Your comment..."></textarea>
+                                    <div class="check-rules">
+                                        <input type="checkbox" id="rules">
+                                        <label for="rules">Company news and unque discounts for subscreibers</label>
+                                    </div>
+                                    <div class="check-rules">
+                                        <input type="checkbox" id="accept">
+                                        <label for="accept">Select this check box to accept the <a href="warranty.html">Terms and Conditions</a></label>
+                                    </div>
+                                    <button class="form-submit">SUBMIT MY ORDER</button>
+                                </div>
+                                
                             </div>
                         </div>
-                        <div class="review-code">
-                            <div class="apply-giftcode">
-                                <input type="text" name="giftcode" id="">
-                                <button type="submit">Apply</button>
-                            </div>
-                            <div class="apply-comment">
-                                <label for="comment">You can leave us a comment here</label>
-                                <textarea name="comment" id="comment" placeholder="Your comment..."></textarea>
-                                <div class="check-rules">
-                                    <input type="checkbox" id="rules">
-                                    <label for="rules">Company news and unque discounts for subscreibers</label>
-                                </div>
-                                <div class="check-rules">
-                                    <input type="checkbox" id="accept">
-                                    <label for="accept">Select this check box to accept the <a href="warranty.html">Terms and Conditions</a></label>
-                                </div>
-                                <div class="submit-review">
-                                    <a href="">SUBMIT MY ORDER</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        
+                    </form>
+                   
                 </div>
             </section>
         </section>
@@ -645,13 +652,13 @@
                     </div>
                     <form action="#">
                         <div class="field">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" placeholder="Your Name">
                         </div>
                         <div class="field">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" placeholder="Your Email">
                         </div>
                         <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Messenger" required></textarea>
+                            <textarea cols="30" rows="10" placeholder="Messenger"></textarea>
                         </div>
                         <div class="field">
                             <button type="submit">Start chat</button>
@@ -669,6 +676,7 @@
     <script type="text/javascript" src="js/lightslider.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script type="text/javascript" src="js/loading.js"></script>
+    <script type="text/javascript" src="js/validator.js"></script>
 
     <!---------- Login - register ---------->
     <script type="text/javascript">
@@ -685,6 +693,22 @@
                 $(this).siblings().removeClass('active');
                 $(this).toggleClass('active');
             });
+        });
+    </script>
+
+    <script type="text/javascript">
+        Validator({
+            form: '#form-2',
+            errorSelector: '.form-message',
+            rules:  [
+                Validator.isFirst('#firstname', 'Enter Your First Name'),
+                Validator.isLast('#lastname', 'Enter Your Last Name'),
+                Validator.isEmailCheck('#emailcheck', 'Enter Your Email'),
+                Validator.isPhone('#phone', 'Enter Your Phone Number'),
+                Validator.isAddress('#address', 'Enter Your Address'),
+                Validator.isZip('#zip', 'Enter Your Postcode'),
+                Validator.isCity('#city', 'Choose Your City'),
+            ]
         });
     </script>
 </body>

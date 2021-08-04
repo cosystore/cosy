@@ -712,7 +712,45 @@ section .home-user-form.active-user .login-box .imgBx
     color: #00ff40;
     font-size: 60px;
 }
-.forgot-form input,
+.forgot-form form div{
+    width: 90%;
+    margin: 8px 0;
+}
+.forgot-form form div input{
+    width:100%;
+    padding: 20px 10px;
+    background: #f5f5f5;
+    color: #333;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.form-submit{
+    width:90%;
+    padding: 10px;
+    background: #0075bc;
+    color: #fff;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 14px;
+    margin: 8px 0;
+    letter-spacing: 1px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.form-submit:hover{
+   background-color: #fbaa19;
+}
+.form-group.invalid .form-control {
+    border: 1px solid #f33a58;
+}
+.form-group.invalid .form-message{
+    color: #f33a58;
+    font-size: 12px;
+  }
 .confirm-form input{
     width:90%;
     padding: 10px;
@@ -3506,11 +3544,12 @@ form .textarea textarea:focus::placeholder{
     display: flex;
     align-items: center;
 }
-.checkout-container{
+.checkout-container form{
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
+    margin: auto;
 }
  .checkout-title{
     background: #0075bc;
@@ -3537,7 +3576,7 @@ form .textarea textarea:focus::placeholder{
 .checkout-box-1 .checkout-form {
     padding: 0 10px;
 }
-.checkout-box-1 .checkout-form form div{
+.checkout-box-1 .checkout-form > div{
     margin: 10px 0;
 }
 .checkout-box-1 .checkout-form .form-name{
@@ -3545,12 +3584,14 @@ form .textarea textarea:focus::placeholder{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
 }
-.checkout-box-1 .checkout-form  label{
+.checkout-box-1 .checkout-form label{
     font-weight: 600;
     font-size: 14px;
 }
 .checkout-box-1 .checkout-form label span{
-    color: red;
+    font-size: 12px;
+    font-weight: 400;
+    color: #f33a58;
 }
 .checkout-box-1 .checkout-form input{
     outline: none;
@@ -3703,7 +3744,8 @@ form .textarea textarea:focus::placeholder{
     color: #0075bc;
     border-bottom: 1px solid #0075bc ;
 }
-.checkout-box-3 .review-code .apply-comment .submit-review{
+.checkout-box-3 .review-code .apply-comment button{
+    color: #fff;
     font-size: 15px;
     background-color: #f45c43;
     width: 100%;
@@ -3715,14 +3757,13 @@ form .textarea textarea:focus::placeholder{
     margin-top: 10px;
     transition: all ease 300ms;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
-.checkout-box-3 .review-code .apply-comment .submit-review a{
-    color: #fff;
-}
-.checkout-box-3 .review-code .apply-comment .submit-review:hover{
+.checkout-box-3 .review-code .apply-comment button:hover{
     background: #2193b0;
 }
-.checkout-box-3 .review-code .apply-comment .submit-review:active{
+.checkout-box-3 .review-code .apply-comment button:active{
     transform: scale(0.97);
 }
 .checkout-box-1{
@@ -3742,7 +3783,7 @@ form .textarea textarea:focus::placeholder{
     background-color: #f6f6f6;
 }
 @media (max-width: 1300px){
-    .checkout-container{
+    .checkout-container form{
         grid-template-columns: repeat(1, 1fr);
     }
 }
