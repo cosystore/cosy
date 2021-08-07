@@ -47,7 +47,7 @@
 
 <body>
     <!---------- Preloader ---------->
-    <!-- <div id="home-preloader"></div> -->
+    <div id="home-preloader"></div>
 
     <section class="home-main">
         <!---------- Social-Mini-Icon ---------->
@@ -337,7 +337,7 @@
            
             <section class="checkout-page">
                 <div class="checkout-container">
-                    <form id="form-2">
+                    <form action="thankyou.html">
                         <div class="checkout-box-1">
                             <div class="checkout-title">
                                 <div class="title-number">
@@ -348,51 +348,51 @@
                                 </div>
                             </div>
                             <div class="checkout-form">
-                                    <div class="form-name">
-                                        <div class="first-name form-group">
-                                            <label for="firstname">First Name <span>*</span></h4>
-                                            <input type="text" id="firstname" name="firstname" >
-                                            <span class="form-message"></span>
-                                        </div>
-                                        <div class="last-name form-group">
-                                            <label for="lastname">Last Name <span>*</span></h4>
-                                            <input type="text" id="lastname"  name="lastname">
-                                            <span class="form-message"></span>
-                                        </div>
-                                    </div>
-                                    <div class="form-email form-group">
-                                        <label for="emailcheck">Email <span>*</span></label>
-                                        <input type="text" id="emailcheck" name="email">
+                                <div class="form-name">
+                                    <div class="first-name form-group">
+                                        <label for="firstname">First Name <span>*</span></h4>
+                                        <input type="text" id="firstname" name="firstname" required>
                                         <span class="form-message"></span>
                                     </div>
-                                    <div class="form-phone form-group">
-                                        <label for="phone">Phone</label>
-                                        <input type="tel" id="phone" name="phone" >
+                                    <div class="last-name form-group">
+                                        <label for="lastname">Last Name <span>*</span></h4>
+                                        <input type="text" id="lastname"  name="lastname" required>
                                         <span class="form-message"></span>
                                     </div>
-                                    <div class="form-address form-group">
-                                        <label for="address">Address <span>*</span></label>
-                                        <input type="text" id="address" name="address">
+                                </div>
+                                <div class="form-email form-group">
+                                    <label for="emailcheck">Email <span>*</span></label>
+                                    <input type="text" id="emailcheck" name="email" required>
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="form-phone form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="form-address form-group">
+                                    <label for="address">Address <span>*</span></label>
+                                    <input type="text" id="address" name="address" required>
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="form-city">
+                                    <div class="city">
+                                        <label for="city">City <span>*</span></label>
+                                        <select name="city" id="city" required>
+                                            <option value="hanoi">Hà Nội</option>
+                                            <option value="tphcm">TP. Hồ Chí Minh</option>
+                                            <option value="danang">Đà Nẵng</option>
+                                            <option value="haiphong">Hải Phòng</option> <option value="cantho">Cần Thơ</option>
+                                            <option value="thanhhoa">Thanh Hoá</option>
+                                        </select>
                                         <span class="form-message"></span>
                                     </div>
-                                    <div class="form-city">
-                                        <div class="city">
-                                            <label for="city">City <span>*</span></label>
-                                            <select name="city" id="city">
-                                                <option value="hanoi">Hà Nội</option>
-                                                <option value="tphcm">TP. Hồ Chí Minh</option>
-                                                <option value="danang">Đà Nẵng</option>
-                                                <option value="haiphong">Hải Phòng</option> <option value="cantho">Cần Thơ</option>
-                                                <option value="thanhhoa">Thanh Hoá</option>
-                                            </select>
-                                            <span class="form-message"></span>
-                                        </div>
-                                        <div class="zip form-group">
-                                            <label for="zip">Zip/postal code <span>*</span></label>
-                                            <input type="text" name="zip" id="zip">
-                                            <span class="form-message"></span>
-                                        </div>
+                                    <div class="zip form-group">
+                                        <label for="zip">Zip/postal code <span>*</span></label>
+                                        <input type="text" name="zip" id="zip" required>
+                                        <span class="form-message"></span>
                                     </div>
+                                </div>
                             </div>
                         </div>
                         <div class="checkout-box-2">
@@ -407,12 +407,12 @@
                                 </div>
                                 <div class="shipping-form form-group">
                                     <div class="ship-1">
-                                        <input class="form-control" type="radio" value="premium" id="pre-ship" name="ship">
+                                        <input class="form-control" type="radio" value="premium" id="pre-ship" name="ship" required>
                                         <label for="pre-ship">Premium shipping method (3-5 days) - <span>$20.00</span></label>
                                         <span class="form-message"></span>
                                     </div>
                                     <div class="ship-2">
-                                        <input class="form-control" type="radio" value="free" id="free-ship" name="ship">
+                                        <input class="form-control" type="radio" value="free" id="free-ship" name="ship" required>
                                         <label for="free-ship">Free shipping (7-8 days) - <span>Free shipping</span></label>
                                         <span class="form-message"></span>
                                     </div>  
@@ -431,7 +431,7 @@
                                 <div class="billing-form form-group">
                                     <div class="bill">
                                         <div>
-                                            <input class="form-control" type="radio" value="cash"  name="bill" id="cod">
+                                            <input class="form-control" type="radio" value="cash"  name="bill" id="cod" required>
                                             <label for="cod">Cashiers Check or Cash Only</label>
                                             <span class="form-message"></span>
                                         </div>
@@ -441,7 +441,7 @@
                                     </div>
                                     <div class="bill">
                                         <div class="credit-card">
-                                            <input class="form-control" type="radio" value="credit" name="bill" id="credit">
+                                            <input class="form-control" type="radio" value="credit" name="bill" id="credit" required>
                                             <label for="credit">Credit Card</label>
                                             <span class="form-message"></span>
                                         </div>
@@ -452,7 +452,7 @@
                                     </div>
                                     <div class="bill">
                                         <div class="paypal-card">
-                                            <input class="form-control" type="radio" value="paypal" name="bill" id="paypal">
+                                            <input class="form-control" type="radio" value="paypal" name="bill" id="paypal" required>
                                             <label for="paypal">Paypal</label>
                                             <span class="form-message"></span>
                                         </div>
@@ -529,27 +529,21 @@
                                     <label for="comment">You can leave us a comment here</label>
                                     <textarea name="comment" id="comment" placeholder="Your comment..."></textarea>
                                     <div class="check-rules">
-                                        <input type="checkbox" id="rules">
+                                        <input type="checkbox" id="rules" required>
                                         <label for="rules">Company news and unque discounts for subscreibers</label>
                                     </div>
                                     <div class="check-rules">
-                                        <input type="checkbox" id="accept">
+                                        <input type="checkbox" id="accept" required>
                                         <label for="accept">Select this check box to accept the <a href="warranty.html">Terms and Conditions</a></label>
                                     </div>
-                                    <button href="thankyou.html" class="formCheckout-submit">SUBMIT MY ORDER</button>
+                                    <button type="submit" class="formCheckout-submit">SUBMIT MY ORDER</button>
                                 </div>  
-                            </div>
+                            </div> 
                         </div>
-                        
                     </form>               
                 </div>
             </section>
         </section>
-        
-
-
-       
-
         <!------------- footer ----------------->
         <footer class="footer">
             <div class="home-container">
@@ -706,7 +700,6 @@
             });
         });
     </script>
-
     <script type="text/javascript">
         Validator({
             form: '#form-2',
@@ -721,23 +714,6 @@
                 Validator.isCity('#city', 'Choose Your City'),
                 // Validator.isShip('input[name="ship"]'),
                 // Validator.isBill('input[name="bill"]'),
-            ]
-        });
-    </script>
-
-    <!-- validator js -->
-    <!-- Mong muon cua chung ta -->
-    <script type="text/javascript">
-        Validator({
-            form: '#form-1',
-            errorSelector: '.form-message',
-            rules:  [
-                Validator.isRequired('#fullname', 'Enter Your Name'),
-                Validator.isEmail('#email', 'Enter Your Email'),
-                Validator.minLength('#password, 6', 'Vui long nhap mat khau'),
-                Validator.isConfirmed('#password-confirmation', function(){
-                    return document.querySelector('#form-1 #password').value;
-                }, 'Mat khau nhap lai khong chinh xac')
             ]
         });
     </script>
