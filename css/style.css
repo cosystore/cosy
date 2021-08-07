@@ -2334,10 +2334,29 @@ form .textarea textarea:focus::placeholder{
 }
 .contact-in:nth-child(1) {
     margin: 10px 10px;
-  
 }
-.contact-in:nth-child(1) .title{
-      color: #0075bc;
+.contact-in:nth-child(1) form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-in:nth-child(1) form .contact-1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem
+}
+.contact-input{
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 5px;
+    background: transparent;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
 }
 .contact-in .title-send,
 .contact-in .title-contact{
@@ -2394,24 +2413,8 @@ form .textarea textarea:focus::placeholder{
     line-height: 30px;
     color: #333;
 }
-.contact-in form{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem  
-}
-.contact-input{
-    height: 40px;
-    margin-bottom: 20px;
-    border: 1px solid #999;
-    border-radius: 4px;
-    outline: none;
-    padding-left: 5px;
-    background: transparent;
-    color: #000;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-}
+
+
 .contact-input:focus,
 .contact-textarea:focus{
     border: 2px solid #0075bc;
@@ -2458,6 +2461,12 @@ form .textarea textarea:focus::placeholder{
     }
     .contact-box form{
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 678px){
+    .contact-box .contact-in form .contact-1{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0rem
     }
 }
 
@@ -3861,10 +3870,10 @@ form .textarea textarea:focus::placeholder{
     align-items: center;
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
+    text-align: center;
 }
 .request-container{
-    max-width: 800px;
-    width: 100%;
+    width: 60%;
     padding: 25px 30px;
 }
 .request-container .title{
@@ -3875,13 +3884,12 @@ form .textarea textarea:focus::placeholder{
     font-size: 20px;
 }
 .request-container form .request-details{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
     margin: 20px 0 12px 0;
 }
 .request-container form .request-details .request-control{
-    width: calc(100% / 2 - 20px);
     margin-bottom: 25px;
 }
 .request-details .request-control input{
@@ -3892,7 +3900,7 @@ form .textarea textarea:focus::placeholder{
     padding-left: 15px;
     font-size: 16px;
 }
-.request-container  textarea{
+.request-container textarea{
     width: 100%;
     height: 200px;
     resize: none;
@@ -3927,55 +3935,8 @@ form .request-btn .btn:hover{
 form .request-btn .btn:active{
     transform: scale(97%);
 }
-.request-confirm-form{
-    width: 420px;
-    height: 300px;
-    padding: 20px 10px;
-    background-color: #ffffff;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-}
-.request-contact .request-confirm-form{
-    display: none;
-}
-.request-confirm-form h2{
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
-    width: 100%;
-    color: #555;   
-}
-.request-confirm-form strong i{
-    color: #00ff40;
-    font-size: 50px;
-    padding-bottom: 20px;
-}
-.request-confirm-form .request-form-cancel i{
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    color: #868686;
-}
-.request-active,
-.request-active .request-contact .request-confirm-form{
-    display: block;
-    animation: fade 0.3s; 
-}
 
-@keyframes fade{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
-}
-@media (max-width: 1100px){
+@media (max-width: 1200px){
     .request-info{
         top: 25%;
     }
@@ -3986,7 +3947,7 @@ form .request-btn .btn:active{
         font-size: 20px;
     }
     .request-container{
-        max-width: 100%;
+        width: 80%;
     }
     .request-container .title p{
         font-size: 20px;
@@ -3994,17 +3955,21 @@ form .request-btn .btn:active{
     .request-container .title h2{
         font-size: 25px;
     }
-    .request-container form .request-details .request-control{
-        width: 100%;
-        margin-bottom: 25px;
-        height: 50px;
-    }
+}
+@media (max-width: 768px){
     .request-container form .request-details{
-        max-height: 300px;
-        overflow-y: scroll;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
-
+@media (max-width: 512px){
+    .request-contact .title p{
+        font-size: 12px;
+    }
+    .request-contact .title h2{
+        font-size: 14px;
+    }
+}
+ 
 /* ---------- Experience-page ---------- */
 .experience-page{
     width: 100%;
