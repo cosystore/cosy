@@ -26,6 +26,7 @@
         <!---------- Css ---------->
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/loading.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.nice-number.css"> 
             
     </head>
     <body>
@@ -187,7 +188,7 @@
                     <a href="cart.html">
                         <i class="fa fa-shopping-cart">
                             <!----------- Number of product in cart -->
-                            <span class="number-product">1</span>
+                            <span class="number-product">2</span>
                         </i>
                     </a>
                 </div>
@@ -317,34 +318,64 @@
 
                 <div class="cart-container">
                     <div class="cart-left">
-                        <div class="cart-item">
-                            <div class="item-img">
-                                <img src="./imgcosy/panasonic/dieu-hoa-panasonic-2-chieu-inverter-9000btu-csyz9wkh8-8wtWB8.png">
+                        <div class="cart-box item-one">
+                             <div class="cart-item">
+                                <div class="item-img">
+                                    <img src="./imgcosy/panasonic/dieu-hoa-panasonic-2-chieu-inverter-9000btu-csyz9wkh8-8wtWB8.png">
+                                </div>
+                            </div>
+                            <div class="cart-price"> 
+                                <div class="item-info">
+                                    <h2>PANASONIC 9000BTU 9WKH-9M</h2>
+                                    <code>V13APFUV</code>
+                                    <p class="p-first">Get it between Thu, Aug 1 - Thu, Aug 7</p>
+                                    <p>We'll reach out to schedule the delivery after your item ships</p>
+                                </div>
+                                <div class="item-price">
+                                    <h2>$479.00</h2>
+                                    <p><strike>$599.00</strike></p>
+                                    <div class="plus-items">
+                                        <input type="number" value="1" min="1">
+                                    </div>
+                                    <a href="products.html">Save for late</a>
+                                    <a class="cart-remove-1"><i class="fa fa-trash-o"></i> Remove</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="cart-price"> 
-                            <div class="item-info">
-                                <h2>PANASONIC 9000BTU CS-PU9WKH-9M</h2>
-                                <code>V13APFUV</code>
-                                <p class="p-first">Get it between Thu, Aug 1 - Thu, Aug 7</p>
-                                <p>We'll reach out to schedule the delivery after your item ships</p>
-                            </div>
-                            <div class="item-price">
-                                <h2>$479.00</h2>
-                                <p><strike>$599.00</strike></p>
-                                <p>1</p>
-                                <a href="products.html">Save for late</a>
-                                <a href="index.html"><i class="fa fa-trash-o"></i> Remove</a>
-                            </div>
-                           
-                        </div>
+
+                        <div class="cart-box item-two">
+                            <div class="cart-item">
+                               <div class="item-img">
+                                   <img src="./imgcosy/samsung/samsung-ar13tyhycwknsv-K0tq8H.png">
+                               </div>
+                           </div>
+                           <div class="cart-price"> 
+                               <div class="item-info">
+                                   <h2>Samsung 10000BTU K0TQ8H</h2>
+                                   <code>AS11PV8</code>
+                                   <p class="p-first">Get it between Thu, Aug 1 - Thu, Aug 7</p>
+                                   <p>We'll reach out to schedule the delivery after your item ships</p>
+                               </div>
+                               <div class="item-price">
+                                   <h2>$519.00</h2>
+                                   <p><strike>$629.00</strike></p>
+                                   <div class="plus-items">
+                                        <input type="number" value="1" min="1">
+                                    </div>
+                                   <a href="products.html">Save for late</a>
+                                   <a class="cart-remove-2"><i class="fa fa-trash-o"></i> Remove</a>
+                               </div>
+                           </div>
+                       </div>
+                       
+                        
                     </div>
                     <div class="cart-right">
                         <p><i class="fa fa-truck"></i> This order qualifies for Free Shipping!</p>
                         <table class="cart-table">
                             <tr>
-                                <td>Item Subtotal:</td>
-                                <td>$599.00</td>
+                                <td>Items Subtotal:</td>
+                                <td>$1228.00</td>
                             </tr>
                             <tr>
                                 <td>Ship:</td>
@@ -366,11 +397,11 @@
                         <table>
                             <tr>
                                 <td><h2>Total:</h2> </td>
-                                <td>$579.00</td>
+                                <td>$1062.00</td>
                             </tr>
                             <tr>
                                 <td>You Save:</td>
-                                <td>$120.00</td>
+                                <td>$266.00</td>
                             </tr>
                         </table>
                         <a href="checkout.html"><i class="fa fa-cart-arrow-down"></i>  Proceed to Checkout</a>
@@ -568,6 +599,7 @@
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
         <script type="text/javascript" src="js/validator.js"></script>
+        <script type="text/javascript" src="js/jquery.nice-number.js"></script>
     
         <!---------- Login - register ---------->
         <script type="text/javascript">
@@ -607,6 +639,21 @@
                 ]
             });
         </script>
+        <script type="text/javascript">
+            $(function(){
+                $('input[type="number"]').niceNumber();
+            });
+        </script>
+        
+        <script type="text/javascript">
+            $(document).on('click','.cart-remove-1',function(){
+                $('.item-one').addClass('item-remove');
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).on('click','.cart-remove-2',function(){
+                $('.item-two').addClass('item-remove');
+            });
+        </script>
     </body>
-    
 </html>

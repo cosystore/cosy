@@ -322,25 +322,25 @@
                     <p>Service Request</p>
                     <h2>Contact Cosy Care+</h2>
                 </div>
-                <form>
+                <form action="thankyou-contact.html">
                     <div class="request-details">
                         <div class="request-control request-firstname">
-                            <input type="text" placeholder="First Name*" required="" title="First Name*">
+                            <input type="text" placeholder="First Name*" required title="First Name*">
                         </div>
                         <div class="request-control request-lastname">
-                            <input type="text" placeholder="Last Name*" required="" title="Last Name*">
+                            <input type="text" placeholder="Last Name*" required title="Last Name*">
                         </div>
                         <div class="request-control request-email">
-                            <input type="text"  placeholder="Email*" required="" title="Email*">
+                            <input type="email"  placeholder="Email*" required title="Email*">
                         </div>
                         <div class="request-control request-phone">
-                            <input type="tel" placeholder="Mobile Number*" required="" title="Mobile Number*">
+                            <input type="tel" placeholder="Mobile Number*" required title="Mobile Number*">
                         </div>
                         <div class="request-control request-address" >
-                            <input placeholder="Address" rows="3" title="Address">
+                            <input placeholder="Address" rows="3" required title="Address">
                         </div>
                         <div class="request-control request-product">
-                            <select name="service_request_product_type" required="">
+                            <select name="service_request_product_type" required>
                                 <option value="">Product Type*</option>
                                 <option value="1">Split Air Conditioner</option>
                                 <option value="2">Window Air Conditioner</option>
@@ -349,23 +349,23 @@
                             </select>
                         </div>
                         <div class="request-control requst-model">
-                            <input type="text"  placeholder="Model No*" required="" title="Model No*">
+                            <input type="text"  placeholder="Model No*" required title="Model No*">
                         </div>
                         <div class="request-control request-seri">
-                            <input type="text" placeholder="Product Serial No" title="Product Serial No">
+                            <input type="text" placeholder="Product Serial No*" required title="Product Serial No">
                         </div>
                         <div class="request-control request-purchase">
-                            <input type="t" placeholder="Date of Purchase DD/MM/YYYY" title="Date of Purchase DD/MM/YYYY">
+                            <input type="t" placeholder="Date of Purchase DD/MM/YYYY" required title="Date of Purchase DD/MM/YYYY">
                         </div>
 
                         <div class="request-control request-subject">
-                            <input type="text" placeholder="Subject" title="Subject">
+                            <input type="text" placeholder="Subject" required title="Subject">
                         </div>
                         <div class="request-control request-appointment">
-                            <input type="text" placeholder="Date of Appointment DD/MM/YYYY" title="Date of Appointment DD/MM/YYYY">
+                            <input type="text" placeholder="Date of Appointment DD/MM/YYYY" required title="Date of Appointment DD/MM/YYYY">
                         </div>
                         <div class="request-control request-timeslot">
-                            <select class="form-control">
+                            <select class="form-control" required>
                                 <option value="">Select Time Slot</option>
                                 <option value="1">09 AM - 11 AM</option>
                                 <option value="2">11 AM - 01 PM</option>
@@ -377,7 +377,7 @@
                         </div>
                     </div>
                     <div class="request-control request-expalain">
-                        <textarea placeholder="Explain Your Problem*" rows="3" required="" title="Explain Your Problem*"></textarea>
+                        <textarea placeholder="Explain Your Problem*" rows="3" required title="Explain Your Problem*"></textarea>
                     </div>
                     <div class="request-btn">
                         <button class="btn" type="submit">SUBMIT</button>

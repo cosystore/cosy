@@ -204,7 +204,7 @@
                 <a href="cart.html">
                     <i class="fa fa-shopping-cart">
                         <!----------- Number of product in cart -->
-                        <span class="number-product">1</span>
+                        <span class="number-product">2</span>
                     </i>
                 </a>
             </div>
@@ -351,7 +351,7 @@
                                 <div class="form-name">
                                     <div class="first-name form-group">
                                         <label for="firstname">First Name <span>*</span></h4>
-                                        <input type="text" id="firstname" name="firstname" required>
+                                        <input autofocus type="text" id="firstname" name="firstname" required>
                                         <span class="form-message"></span>
                                     </div>
                                     <div class="last-name form-group">
@@ -362,7 +362,7 @@
                                 </div>
                                 <div class="form-email form-group">
                                     <label for="emailcheck">Email <span>*</span></label>
-                                    <input type="text" id="emailcheck" name="email" required>
+                                    <input type="email" id="emailcheck" name="email" required>
                                     <span class="form-message"></span>
                                 </div>
                                 <div class="form-phone form-group">
@@ -477,53 +477,80 @@
         
                             <div class="review-form">
                                 <table>
-                                    <tr>
-                                        <th>Product</th>
-                                        <th>Quantity</th>
-                                        <th>Subtotal</th>
-                                    </tr>
-                                    <tr>
+                                    <thead>
+                                        <tr >
+                                            <th>Product</th>
+                                            <th>Quantity</th>
+                                            <th>Subtotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tr class="review-table-1">
                                         <td>
                                             <div class="review-product">      
                                                 <div>
                                                     <img src="./imgcosy/panasonic/panasonic-N12UKH.png">
-                                                    <p>PANASONIC 9000BTU CS-PU12WKH-8M</p>
+                                                    <h4>PANASONIC 9000BTU 9WKH-9M</h4>
                                                 </div>
                                             </div>
                                         </td>   
                                         <td>1</td>
                                         <td>$599.00</td>
                                     </tr>
+                                    <tr class="review-table-2">
+                                        <td>
+                                            <div class="review-product">      
+                                                <div>
+                                                    <img src="./imgcosy/samsung/samsung-ar13tyhycwknsv-K0tq8H.png">
+                                                    <h4>Samsung 10000BTU K0TQ8H</h4>
+                                                </div>
+                                            </div>
+                                        </td>   
+                                        <td>1</td>
+                                        <td>$629.00</td>
+                                    </tr>
                                 </table>
+                                
                                 <div class="total-price">
                                     <table>
                                         <tr>
+                                            <td></td>
                                             <td>Subtotal</td>
-                                            <td>$599.00</td>
+                                            <td>$1228.00</td>
                                         </tr>
                                         <tr>
+                                            <td></td>
                                             <td>Tax</td>
                                             <td>$50.00</td>
                                         </tr>
                                         <tr>
+                                            <td></td>
                                             <td>Warranty</td>
                                             <td>$50.00</td>
                                         </tr>
                                         <tr>
+                                            <td></td>
                                             <td>Discound</td>
                                             <td>-20%</td>
                                         </tr>
                                         <tr>
+                                            <td></td>
                                             <td>Total</td>
-                                            <td>$579.00</td>
+                                            <td>$1062.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>You Save:</td>
+                                            <td>$266.00</td>
                                         </tr>
                                     </table>
                                 </div>
                             </div>
                             <div class="review-code">
                                 <div class="apply-giftcode">
-                                    <input type="text" name="giftcode" id="">
-                                    <button type="submit">Apply</button>
+                                    <form>
+                                        <input id="giftcode" type="text">
+                                        <label for="giftcode">Apply</label>
+                                    </form>
                                 </div>
                                 <div class="apply-comment">
                                     <label for="comment">You can leave us a comment here</label>
@@ -700,20 +727,19 @@
             });
         });
     </script>
+    <!-- validator js -->
+    <!-- Mong muon cua chung ta -->
     <script type="text/javascript">
         Validator({
-            form: '#form-2',
+            form: '#form-1',
             errorSelector: '.form-message',
             rules:  [
-                Validator.isFirst('#firstname', 'Enter Your First Name'),
-                Validator.isLast('#lastname', 'Enter Your Last Name'),
-                Validator.isEmailCheck('#emailcheck', 'Enter Your Email'),
-                Validator.isPhone('#phone', 'Enter Your Phone Number'),
-                Validator.isAddress('#address', 'Enter Your Address'),
-                Validator.isZip('#zip', 'Enter Your Postcode'),
-                Validator.isCity('#city', 'Choose Your City'),
-                // Validator.isShip('input[name="ship"]'),
-                // Validator.isBill('input[name="bill"]'),
+                Validator.isRequired('#fullname', 'Enter Your Name'),
+                Validator.isEmail('#email', 'Enter Your Email'),
+                Validator.minLength('#password, 6', 'Vui long nhap mat khau'),
+                Validator.isConfirmed('#password-confirmation', function(){
+                    return document.querySelector('#form-1 #password').value;
+                }, 'Mat khau nhap lai khong chinh xac')
             ]
         });
     </script>
